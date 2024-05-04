@@ -1,0 +1,19 @@
+Creating and nesting components
+ A component is a piece of the UI (user interface) that has its own logic and appearance.
+
+ function MyButton() {
+  return (
+    <button>I'm a button</button>
+  );
+}
+
+
+nesting it:
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}
