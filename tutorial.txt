@@ -71,3 +71,17 @@ export default function Profile() {
   );
 }
 
+Conditional rendering:
+if statement:
+
+let content;
+if (isLoggedIn) {
+  content = <AdminPanel />;
+} else {
+  content = <LoginForm />;
+}
+return (
+  <div>
+    {content}
+  </div>
+);
