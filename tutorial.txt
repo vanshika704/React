@@ -85,3 +85,15 @@ return (
     {content}
   </div>
 );
+
+
+conditional operator:
+
+
+<div>
+  {isLoggedIn ? (
+    <AdminPanel />
+  ) : (
+    <LoginForm />
+  )}
+</div>
