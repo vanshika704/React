@@ -46,7 +46,7 @@ return (
 );
 
 
-
+general usage 
 name and image :
 const user = {
   name: 'Hedy Lamarr',
