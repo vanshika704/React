@@ -109,3 +109,19 @@ const products = [
   { title: 'Garlic', id: 2 },
   { title: 'Apple', id: 3 },
 ];
+
+Responding to events 
+You can respond to events by declaring event handler functions inside your components:
+
+
+function MyButton() {
+  function handleClick() {
+    alert('You clicked me!');
+  }
+
+  return (
+    <button onClick={handleClick}>
+      Click me
+    </button>
+  );
+}
