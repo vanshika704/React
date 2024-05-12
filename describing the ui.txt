@@ -18,3 +18,18 @@ export default function Gallery() {
     </section>
   );
 }
+
+Importing andexporting files:(existing js file me se is function ya is component ko import krwaliya)
+
+import Profile from './Profile.js';
+
+export default function Gallery() {
+  return (
+    <section>
+      <h1>Amazing scientists</h1>
+      <Profile />
+      <Profile />
+      <Profile />
+    </section>
+  );
+}
