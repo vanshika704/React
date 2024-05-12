@@ -33,3 +33,11 @@ export default function Gallery() {
     </section>
   );
 }
+
+
+Exporting and importing a component:
+ 1: Make a new JS file to put the components in.
+ 2 :Export your function component from that file (using either default or named exports).
+ 3: Import it in the file where you’ll use the component (using the corresponding technique for importing default or named exports).
+
+A file can only have one default export, but it can have numerous named exports!
