@@ -34,7 +34,7 @@ export default function Gallery() {
   );
 }
 
-particular function can be exported as well and whole page can be imported as well
+particular function can be exported as well and whole page can be imported as well.
 Exporting and importing a component:
  1: Make a new JS file to put the components in.
  2 :Export your function component from that file (using either default or named exports).
