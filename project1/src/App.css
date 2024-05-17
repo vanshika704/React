@@ -41,5 +41,10 @@
   color: #888;
 }
 h1{
-  color:rgb(2, 34, 34)
+  color:rgb(2, 34, 34);
+  
+  
+}
+h1:hover {
+  color: rgb(17, 151, 151); /* Change this to the color you want on hover */
 }
