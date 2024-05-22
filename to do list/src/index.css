@@ -22,19 +22,40 @@ a:hover {
   color: #535bf2;
 }
 
+
+
+h1 {display: flex;
+  align-items: start;
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #1a1a1a;
+}
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+ 
+  align-items: flex-start; 
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
+.top-center {
+  margin: 0;
+  padding: 20px;
   font-size: 3.2em;
   line-height: 1.1;
+  color: #1a1a1a;
+  position: absolute; 
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%);
 }
-
+.input-button {
+  margin-top: 200px; 
+  padding: 10px;
+  font-size: 2em;
+  margin-right: 500;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
