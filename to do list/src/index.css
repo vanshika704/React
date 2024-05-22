@@ -33,7 +33,9 @@ h1 {display: flex;
 body {
   margin: 0;
   display: flex;
- 
+  background-image: url('./assets/todo.jpg');
+  background-position: center;
+  background-size: cover;
   align-items: flex-start; 
   min-width: 320px;
   min-height: 100vh;
