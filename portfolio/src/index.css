@@ -16,7 +16,7 @@ hr{
 }
 
 .social > * {
-  margin: 0 5px; /* Adjust the value to set the desired gap */
+  margin: 0 5px; 
 }
 
 .centered-card {
@@ -57,12 +57,12 @@ ul{
   width: 200px;
   height: 300px;
   margin-left: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
- /* Add shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
 }
 
-/* Add hover effect */
+
 .imagephotu:hover {
-  transform: scale(1.05); /* Zoom effect on hover */
-  box-shadow: 0px 8px 16px rgb(24, 24, 24); /* Increase shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgb(24, 24, 24); 
 }
