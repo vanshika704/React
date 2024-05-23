@@ -1,46 +1,41 @@
-
-body, html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background: linear-gradient(45deg, rgb(8, 24, 44), #131f3b, #0f223f, #14344e, #076e8d);
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: 'Poetsen One', sans-serif;
+ background-color: rgb(247, 217, 163);
 }
 
-.elements {
-  margin-top: 20px;
+.container {
   display: flex;
-  align-items: flex-end; 
-  justify-content: space-between; 
-  color: aquamarine;
-  font-size: x-large;
-  width: 100%; 
 }
-
-ul {
+hr{
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.social{
+  margin-top: 10px;
+}
+.centered-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+ul{
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+}
+.card-content {
+  width: 900px;
+  height: 450px;
+  background-color: rgb(248, 245, 245);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
 }
 
-
-.home:hover {
-  color: white;
-}
-
-.about:hover {
-  color: white;
-}
-
-.blogs:hover {
-  color: white;
-}
-
-.skills:hover {
-  color: white;
+.side-cards {
+  display: flex;
+  flex-direction: column;
 }
