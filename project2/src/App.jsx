@@ -12,11 +12,15 @@ function App() {
       <div className="navigation">
         <Navbar />
       </div>
-      <div><hr></hr></div>
-      <div className="image">
-        <ProfileImage />
+      <hr /> {/* Move the <hr> tag here */}
+      <div className="content">
+        <div className="image">
+          <ProfileImage />
+        </div>
+        <div className="intro">
+          <Intro />
+        </div>
       </div>
-      
     </>
   );
 }
@@ -36,19 +40,27 @@ function Navbar() {
       <li onClick={() => navigateTo("/portfolio")} className="nav-item">Portfolio</li>
       <li onClick={() => navigateTo("/contact")} className="nav-item">Contact</li>
     </ul>
-    
   );
 }
 
 function ProfileImage() {
   return (
-    <div className="image">
-      <NextUIImage
-        isZoomed
-        width={240}
-        alt="NextUI Fruit Image with Zoom"
-        src={profileImage}
-      />
+    <NextUIImage
+      isZoomed
+      width={240}
+      alt="NextUI Fruit Image with Zoom"
+      src={profileImage}
+    />
+  );
+}
+
+function Intro() {
+  return (
+    <div className="intro-card">
+      <div className="intro-content">
+        <h2>Hi Everyone! I am Vanshika Sharma, a Btech CSE student at<br></br> Maharishi Markendeshwar (Deemed to be University).</h2>
+        <p>I love to explore and work on new technologies.<br></br> I am a core team member of Google Developers Student Clubs.</p>
+      </div>
     </div>
   );
 }
