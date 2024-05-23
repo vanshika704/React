@@ -79,9 +79,9 @@ hr {
   color: rgb(181, 241, 241); /* Set color to match the "Home" link */
 }
 .intro-card {
-  background-color: transparent; /* Card background color */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(129, 245, 229, 0.781); /* Box shadow */
+  background-color: transparent; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(129, 245, 229, 0.781); 
   padding: 20px; 
 }
 
