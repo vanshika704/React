@@ -26,14 +26,8 @@ function Card1() {
               <FontAwesomeIcon icon={faInstagram} /> 
               <FontAwesomeIcon icon={faLinkedin} />
               <FontAwesomeIcon icon={faTwitter} />
-              <div className="card" style={{ width: "18rem" }}>
               <Image/>
-
-            <div className="card-body">
-              <h5 className="card-title">Profile</h5>
-              <p className="card-text">Explore Profile</p>
-              <button className="Button">Lets Go!!</button>
-            </div></div>
+            
             </li>
           </ul>
          
@@ -44,5 +38,5 @@ function Card1() {
   );
 }
 function Image(){
-  return(<div className="profile"></div>)
+  return(<><div className="imagephotu"></div></>)
 }

@@ -45,17 +45,24 @@ ul{
   display: flex;
   flex-direction: column;
 }
-.card{background-color: beige;
-  margin-left: 80px;
-  font-size: x-large;
-  width: 200px;
-}
+
 .Button{background-color: rgb(80, 62, 41);
   color: rgb(255, 255, 255);
 }
-.card-img-top{
+
+.imagephotu {
   background-image: url("assets/photo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 300px;
+  margin-left: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+ /* Add shadow */
 }
-.Image{
-  background-image: url("assets/photo.jpg");
+
+/* Add hover effect */
+.imagephotu:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  box-shadow: 0px 8px 16px rgb(24, 24, 24); /* Increase shadow on hover */
 }
