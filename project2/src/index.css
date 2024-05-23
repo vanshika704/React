@@ -69,14 +69,14 @@ hr {
 }
 
 .image:hover {
-  transform: scale(1.1); /* Zoom effect on hover */
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); /* Increase box shadow on hover */
+  transform: scale(1.1); 
+  box-shadow: 0px 0px 20px rgba(39, 238, 205, 0.7); 
 }
 
 .intro {
   margin-top: 70px;
   margin-left: 80px;
-  color: rgb(181, 241, 241); /* Set color to match the "Home" link */
+  color: rgb(181, 241, 241); 
 }
 .intro-card {
   background-color: transparent; 
