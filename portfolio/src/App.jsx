@@ -1,7 +1,6 @@
 import "./index.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'; 
-//import "bootstrap/dist/css/bootstrap.min.css";
+import { faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
   return (
@@ -28,7 +27,8 @@ function Card1() {
               <FontAwesomeIcon icon={faLinkedin} />
               <FontAwesomeIcon icon={faTwitter} />
               <div className="card" style={{ width: "18rem" }}>
-              <img src="assets/photo.jpg" className="card-img-top" alt="..." />
+              <Image/>
+
             <div className="card-body">
               <h5 className="card-title">Profile</h5>
               <p className="card-text">Explore Profile</p>
@@ -40,6 +40,9 @@ function Card1() {
           </div>
         </div>
       </div>
-    
+  
   );
+}
+function Image(){
+  return(<div className="profile"></div>)
 }
