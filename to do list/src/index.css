@@ -16,5 +16,6 @@ body {
 
 .card {
   width: 30rem;
-  margin: 30px; /* Add margin between the cards */
+  margin: 30px;
+  box-shadow: cornsilk; /* Add margin between the cards */
 }
