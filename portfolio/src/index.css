@@ -45,13 +45,13 @@ body {
   background-repeat: no-repeat;
   float: left;
   margin-right: 20px; 
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Adding smooth transition for transform and box-shadow */
-  box-shadow: 0px 0px 10px rgb(241, 241, 241); /* Adding a subtle box shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  box-shadow: 0px 0px 10px rgb(241, 241, 241);
 }
 
 .profileimage:hover {
-  transform: scale(1.1); /* Zoom effect on hover */
-  box-shadow: 0px 0px 10px rgba(252, 250, 250, 0.7); /* Enhancing box shadow on hover */
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(252, 250, 250, 0.7); 
 }
 
 
@@ -73,9 +73,9 @@ ul {
   color: #faf8f8;
   margin-top: 100;
   margin-left: 50px; 
-  display: list-item; /* Ensure the divs are displayed inline */
-  vertical-align: top; /* Align the divs to the top */
-  gap: 20px; /* Adjust the gap between the image and text */
+  display: list-item;
+  vertical-align: top; 
+  gap: 20px; 
 }
 .hello{
   font-size: 100px;
