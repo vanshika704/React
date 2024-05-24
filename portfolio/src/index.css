@@ -1,68 +1,36 @@
 body {
- background-color: rgb(247, 217, 163);
+  background-color: rgb(46, 39, 39);
+  font-family: "Open Sans", sans-serif;
 }
 
-.container {
-  display: flex;
-}
-hr{
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.social {
-  display: flex;
-  justify-content:left;
+.navbar {
+  background-color: rgb(252, 251, 251);
 }
 
-.social > * {
-  margin: 0 5px; 
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-item {
+  color: #faf8f8; 
+  font-family: "Open Sans", sans-serif;
+}
+.container-fluid{
+  background-color: rgb(46, 39, 39);
+  font-family: "Open Sans", sans-serif;
+}
+.nav-item{
+  color: #faf8f8;
+  align-items: end;
+  justify-content: end;
+  margin-left: 20px;
 }
 
-.centered-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2899, 99, 99, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-ul{
-  list-style-type: none;
+.navbar-brand{
+  font-size: xx-large;
+  font-family: "Open Sans", sans-serif;
 }
-.card-content {
-  width: 900px;
-  height: 450px;
-  background-color: rgb(248, 245, 245);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 0 50px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 50px;
-}
-
-.side-cards {
-  display: flex;
-  flex-direction: column;
-}
-
-.Button{background-color: rgb(80, 62, 41);
-  color: rgb(255, 255, 255);
-}
-
-.imagephotu {
-  background-image: url("assets/photo.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 200px;
-  height: 300px;
-  margin-left: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
-
-}
-
-
-.imagephotu:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 16px rgb(24, 24, 24); 
+.navbar-nav{
+  margin-left: 800px;
 }
