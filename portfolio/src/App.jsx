@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
   return (
@@ -98,11 +98,13 @@ function Intro() {
       <div className="saaman">
         <h1 className="hello">HI Everyone!!!</h1>
         <br />
-        <h4>I am Vanshika Sharma, a Computer Science student.</h4><br></br>
-        <h4>I work on Flutter,Firebase,React and Canva</h4>
-        <hr></hr><div className="insta">
+        <h4>I am Vanshika Sharma, a Btech Computer Science student.</h4><br></br>
+        <h4>I work on Flutter,Firebase,React and Canva.</h4>
+        <hr></hr><div className="socialmedia"><div className="insta">
         <FontAwesomeIcon icon={faInstagram} /></div>
-      </div>
+        <div className="linkdin"><FontAwesomeIcon icon={faLinkedin} /></div>
+        <div className="tweeter"><FontAwesomeIcon icon={faTwitter} /></div>
+      </div></div>
       <button ></button>
     </div>
   );
