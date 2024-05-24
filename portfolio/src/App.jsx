@@ -98,8 +98,8 @@ function Intro() {
       <div className="saaman">
         <h1 className="hello">HI Everyone!!!</h1>
         <br />
-        <h4>I am Vanshika Sharma, a Btech Computer Science student.</h4><br></br>
-        <h4>I work on Flutter,Firebase,React and Canva.</h4>
+        <h5>I am Vanshika Sharma, a Btech Computer Science student.</h5><br></br>
+        <h5>I work on Flutter,Firebase,React and Canva.</h5>
         <hr></hr><div className="socialmedia"><div className="insta">
         <FontAwesomeIcon icon={faInstagram} /></div>
         <div className="linkdin"><FontAwesomeIcon icon={faLinkedin} /></div>
