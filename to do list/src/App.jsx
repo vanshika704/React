@@ -1,20 +1,62 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import AppName from './components/appName';
-import './App.css'
-import './index.css'
-import Input from './components/input';
-import Text from './components/text';
+import './index.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import todoImage from './assets/todo.jpg';
+import download from './assets/download.jpeg';
 function App() {
   return (
-    <div className="todo-container text-center">
-      <AppName/>
-      <div className="container mt-4">
-        <Input/>
-       
-      </div>
-      <Text/>
+    <div className="card-container">
+      <Enterycard />
+      <Card2 />
     </div>
   );
 }
 
 export default App;
+
+function Enterycard() {
+  return (
+    <div className="card" style={{ width: '30rem', margin: '10px' }}>
+      <img src={todoImage} className="card-img-top" alt="Todo" />
+      <div className="card-body">
+        <h5 className="card-title">TO-DO Items</h5>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <p className="card-text" style={{ marginRight: '10px' }}>Enter Here</p>
+          <input type='text' className="form-control" style={{ flex: '1' }} />
+        </div>
+      </div>
+      <ul className="list-group list-group-flush">
+        <li className="list-group-item"><input type='date' /></li>
+        <li className="list-group-item"><input type='time' /></li>
+        <li className="list-group-item"><input type="text" placeholder='enter specific details' /></li>
+      </ul>
+      <div className="card-body">
+        <a href="#" className="card-link">Card link</a>
+        <a href="#" className="card-link">Another link</a>
+      </div>
+    </div>
+  );
+}
+
+function Card2() {
+  return (
+    <div className="card" style={{ width: '30rem', margin: '10px' }}>
+      <img src={download} className="card-img-top" alt="Todo" />
+      <div className="card-body">
+        <h5 className="card-title">TO-DO Items</h5>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <p className="card-text" style={{ marginRight: '10px' }}>Enter Here</p>
+          
+        </div>
+      </div>
+      <ul className="list-group list-group-flush">
+        <li className="list-group-item"></li>
+        <li className="list-group-item"></li>
+        <li className="list-group-item"></li>
+      </ul>
+      <div className="card-body">
+        <a href="#" className="card-link">View all</a>
+        
+      </div>
+    </div>
+  );
+}

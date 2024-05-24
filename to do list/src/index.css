@@ -1,6 +1,20 @@
 body {
-  background-image: url('assets/back.jpg');
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
+  background: linear-gradient(to right, #202020, #474645);
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 30rem;
+  margin: 30px; /* Add margin between the cards */
 }
