@@ -5,6 +5,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Image/>
     </>
   );
 }
@@ -44,7 +45,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Pricing
+                Blogs
               </a>
             </li>
             <li className="nav-item dropdown">
@@ -80,4 +81,7 @@ function Navbar() {
       </div>
     </nav>
   );
+}
+function Image(){
+  return(<><div className="profileimage"></div></>)
 }

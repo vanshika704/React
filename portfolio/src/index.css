@@ -1,6 +1,7 @@
 body {
   background-color: rgb(46, 39, 39);
   font-family: "Open Sans", sans-serif;
+
 }
 
 .navbar {
@@ -22,6 +23,8 @@ body {
   align-items: end;
   justify-content: end;
   margin-left: 20px;
+  font-family: "Open Sans", sans-serif;
+
 }
 
 .navbar .navbar-toggler-icon {
@@ -30,7 +33,15 @@ body {
 .navbar-brand{
   font-size: xx-large;
   font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
 .navbar-nav{
   margin-left: 800px;
+}
+.profileimage{
+  background-image: url("assets/bwphoto.jpg");
+  height: 650px;
+  width:850px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
