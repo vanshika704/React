@@ -2,6 +2,7 @@ import './index.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import todoImage from './assets/todo.jpg';
 import download from './assets/download.jpeg';
+
 function App() {
   return (
     <div className="card-container">
@@ -51,7 +52,7 @@ function Card2() {
         <li className="list-group-item">Bills</li>
       </ul>
       <div className="card-body">
-        <a href="#" className="card-link">View all</a>
+        <a href="./viewall.jsx" className="card-link">View all</a>
         
       </div>
     </div>
