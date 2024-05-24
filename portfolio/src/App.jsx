@@ -1,12 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Image/>
-    </>
+    <ul>
+      <li><Navbar /></li>
+      <li><Image /></li>
+      <li><Intro /></li>
+    </ul>
   );
 }
 
@@ -32,7 +35,6 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
-            
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#">
                 Home
@@ -82,6 +84,26 @@ function Navbar() {
     </nav>
   );
 }
-function Image(){
-  return(<><div className="profileimage"></div></>)
+
+function Image() {
+  return (
+    <div className="profileimage"></div>
+  );
+}
+
+function Intro() {
+  return (
+    <div className="intro">
+      
+      <div className="saaman">
+        <h1 className="hello">HI Everyone!!!</h1>
+        <br />
+        <h4>I am Vanshika Sharma, a Computer Science student.</h4><br></br>
+        <h4>I work on Flutter,Firebase,React and Canva</h4>
+        <hr></hr><div className="insta">
+        <FontAwesomeIcon icon={faInstagram} /></div>
+      </div>
+      <button ></button>
+    </div>
+  );
 }
