@@ -55,7 +55,7 @@ function Navbar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+               Social Media
               </a>
               <ul className="dropdown-menu">
                 <li>
