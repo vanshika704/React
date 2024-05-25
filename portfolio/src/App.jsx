@@ -61,18 +61,18 @@ function Navbar() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Action
+                  <a className="dropdown-item" href="https://www.instagram.com/sharmavanshika__________?igsh=bmlyaHU5ZjB2NWt3">
+                    Instagram
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
+                  <a className="dropdown-item" href="https://www.linkedin.com/in/vanshika-sharma-b1387428a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                   Linkdin
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
+                  <a className="dropdown-item" href="https://x.com/Vanshika310819?t=r3DQbhhaEJqFpATOyUismQ&s=09">
+                    Tweeter
                   </a>
                 </li>
               </ul>
