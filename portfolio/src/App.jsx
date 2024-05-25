@@ -10,6 +10,7 @@ function App() {
       <li><Navbar /></li>
       <li><Image /></li>
       <li><Intro /></li>
+      
     </ul>
   );
 }
@@ -26,8 +27,8 @@ function Navbar() {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -56,28 +57,23 @@ function Navbar() {
                 className="nav-link dropdown-toggle"
                 href="#"
                 role="button"
-                data-bs-toggle="dropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
                 aria-expanded="false"
               >
                 Social Media
               </a>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="https://www.instagram.com/sharmavanshika__________?igsh=bmlyaHU5ZjB2NWt3">
-                    <FontAwesomeIcon icon={faInstagram} /> Instagram
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="https://www.linkedin.com/in/vanshika-sharma-b1387428a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="https://x.com/Vanshika310819?t=r3DQbhhaEJqFpATOyUismQ&s=09">
-                    <FontAwesomeIcon icon={faTwitter} /> Twitter
-                  </a>
-                </li>
-              </ul>
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a className="dropdown-item" href="https://www.instagram.com/sharmavanshika__________?igsh=bmlyaHU5ZjB2NWt3">
+                  <FontAwesomeIcon icon={faInstagram} /> Instagram
+                </a>
+                <a className="dropdown-item" href="https://www.linkedin.com/in/vanshika-sharma-b1387428a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                  <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+                </a>
+                <a className="dropdown-item" href="https://x.com/Vanshika310819?t=r3DQbhhaEJqFpATOyUismQ&s=09">
+                  <FontAwesomeIcon icon={faTwitter} /> Twitter
+                </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -100,9 +96,11 @@ function Intro() {
         <br />
         <h5>I am Vanshika Sharma, a Btech Computer Science student.</h5><br />
         <h5>I work on Flutter, Firebase, React and Canva.</h5>
-        <hr />
+        <hr></hr>
         <Social />
       </div>
+      
     </div>
   );
 }
+
