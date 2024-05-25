@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import { Social } from "./social.jsx"; // Correctly import the Social component
+import { Social } from "./social.jsx";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-         Vanshika Sharma
+          Vanshika Sharma
         </a>
         <button
           className="navbar-toggler"
@@ -41,7 +43,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Skills 
+                Skills
               </a>
             </li>
             <li className="nav-item">
@@ -57,22 +59,22 @@ function Navbar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-               Social Media
+                Social Media
               </a>
               <ul className="dropdown-menu">
                 <li>
                   <a className="dropdown-item" href="https://www.instagram.com/sharmavanshika__________?igsh=bmlyaHU5ZjB2NWt3">
-                    Instagram
+                    <FontAwesomeIcon icon={faInstagram} /> Instagram
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="https://www.linkedin.com/in/vanshika-sharma-b1387428a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                   Linkdin
+                    <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="https://x.com/Vanshika310819?t=r3DQbhhaEJqFpATOyUismQ&s=09">
-                    Tweeter
+                    <FontAwesomeIcon icon={faTwitter} /> Twitter
                   </a>
                 </li>
               </ul>
