@@ -1,4 +1,3 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import { Social } from './social.jsx';
@@ -7,11 +6,13 @@ import { faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg
 
 function App() {
   return (
-    <ul>
-      <li><Navbar /></li>
-      <li><Image /></li>
-      <li><Intro /></li>
-    </ul>
+    <div>
+      <Navbar />
+      <div className="content">
+        <Image />
+        <Intro />
+      </div>
+    </div>
   );
 }
 
@@ -27,8 +28,8 @@ function Navbar() {
         <button
           className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -36,7 +37,7 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="src/Introduction.jsx">
                 Introduction
@@ -57,7 +58,7 @@ function Navbar() {
                 className="nav-link dropdown-toggle"
                 href="#"
                 role="button"
-                data-toggle="dropdown"
+                data-bs-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
               >

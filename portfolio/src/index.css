@@ -1,6 +1,8 @@
 body {
   background-color: rgb(46, 39, 39);
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -14,13 +16,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container-fluid {
-  background-color: rgb(46, 39, 39);
-  font-family: "Poppins", sans-serif;
+.nav-item .nav-link {
+  color: #faf8f8 !important;
 }
 
-.nav-item {
-  color: #faf8f8;
+.container-fluid {
+  background-color: rgb(46, 39, 39);
   font-family: "Poppins", sans-serif;
 }
 
@@ -59,11 +60,12 @@ body {
   margin-top: 100px;
   gap: 50px;
   margin-right: 10px;
-  float:left
+  float: left;
 }
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .saaman {
@@ -73,7 +75,6 @@ ul {
   display: list-item;
   vertical-align: top;
   gap: 20px;
-  
 }
 
 .hello {
@@ -101,18 +102,115 @@ ul {
   color: #faf8f8;
 }
 
-hr{
+hr {
   margin-top: 130px;
   margin-bottom: 30px;
   color: rgb(210, 213, 216);
 }
 
-
 .dropdown-item {
-  color: #fff; 
+  color: #fff;
 }
 
 .dropdown-menu {
-  background-color:rgb(46, 39, 39);
-  border: none; 
+  background-color: rgb(46, 39, 39);
+  border: none;
+}
+
+@media (max-width: 1200px) {
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .profileimage {
+    height: 550px;
+    width: 400px;
+  }
+
+  .intro {
+    margin-top: 80px;
+    gap: 30px;
+  }
+
+  .saaman {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .profileimage {
+    height: 450px;
+    width: 350px;
+  }
+
+  .intro {
+    margin-top: 60px;
+  }
+
+  .saaman {
+    margin-left: 10px;
+  }
+
+  .hello {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .profileimage {
+    height: 350px;
+    width: 300px;
+  }
+
+  .intro {
+    margin-top: 40px;
+  }
+
+  .saaman {
+    margin-left: 5px;
+  }
+
+  .hello {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .profileimage {
+    height: 250px;
+    width: 250px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .intro {
+    margin-top: 20px;
+    float: none;
+    text-align: center;
+  }
+
+  .saaman {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hello {
+    font-size: 40px;
+  }
+
+  .socialmedia {
+    justify-content: center;
+  }
 }
