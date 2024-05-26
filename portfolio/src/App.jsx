@@ -1,6 +1,7 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.css";
-import { Social } from "./social.jsx";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
+import { Social } from './social.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
@@ -10,7 +11,6 @@ function App() {
       <li><Navbar /></li>
       <li><Image /></li>
       <li><Intro /></li>
-      
     </ul>
   );
 }
@@ -38,8 +38,8 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
-                Home
+              <a className="nav-link" aria-current="page" href="src/Introduction.jsx">
+                Introduction
               </a>
             </li>
             <li className="nav-item">
@@ -94,13 +94,12 @@ function Intro() {
       <div className="saaman">
         <h1 className="hello">HI Everyone!!!</h1>
         <br />
-        <h5>I am Vanshika Sharma, a Btech Computer Science student.</h5><br />
+        <h5>I am Vanshika Sharma, a Btech Computer Science student.</h5>
+        <br />
         <h5>I work on Flutter, Firebase, React and Canva.</h5>
-        <hr></hr>
+        <hr />
         <Social />
       </div>
-      
     </div>
   );
 }
-
