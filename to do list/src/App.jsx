@@ -1,13 +1,19 @@
+
+import PropTypes from 'prop-types'; 
 import './index.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import todoImage from './assets/todo.jpg';
 import download from './assets/download.jpeg';
 
 function App() {
+  
+  const chores = ["Clean the dishes", "Go to market", "Pay bills"];
+
   return (
     <div className="card-container">
       <Enterycard />
-      <Card2 />
+      
+      <Card2 chores={chores} />
     </div>
   );
 }
@@ -16,7 +22,7 @@ export default App;
 
 function Enterycard() {
   return (
-    <div className="card" style={{ width: '30rem', margin: '10px' ,height:'40rem'}}>
+    <div className="card" style={{ width: '30rem', margin: '10px', height: '40rem' }}>
       <img src={todoImage} className="card-img-top" alt="Todo" />
       <div className="card-body">
         <h5 className="card-title">TO-DO Items</h5>
@@ -30,31 +36,34 @@ function Enterycard() {
         <li className="list-group-item"><input type='time' /></li>
         <li className="list-group-item"><input type="text" placeholder='enter specific details' /></li>
       </ul>
-    
     </div>
   );
 }
 
-function Card2() {
+function Card2({ chores }) {
   return (
-    <div className="card" style={{ width: '30rem', margin: '10px',height:'40rem' }}>
+    <div className="card" style={{ width: '30rem', margin: '10px', height: '40rem' }}>
       <img src={download} className="card-img-top" alt="Todo" />
       <div className="card-body">
         <h5 className="card-title">TO-DO Items</h5>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <p className="card-text" style={{ marginRight: '10px' }}>Your chores..</p>
-          
+          <p className="card-text" style={{ marginRight: '10px' }}>Your chores:</p>
         </div>
       </div>
       <ul className="list-group list-group-flush">
-        <li className="list-group-item">Clean the dishes</li>
-        <li className="list-group-item">Go to market</li>
-        <li className="list-group-item">Bills</li>
+      
+        {chores.map((chore, index) => (
+          <li key={index} className="list-group-item">{chore}</li>
+        ))}
       </ul>
       <div className="card-body">
         <a href="./viewall.jsx" className="card-link">View all</a>
-        
       </div>
     </div>
   );
 }
+
+
+Card2.propTypes = {
+  chores: PropTypes.arrayOf(PropTypes.string).isRequired, 
+};
