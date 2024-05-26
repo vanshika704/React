@@ -111,6 +111,9 @@ hr {
 .dropdown-item {
   color: #fff;
 }
+.dropdown-item:hover{
+  color: rgb(46, 39, 39) ;
+}
 
 .dropdown-menu {
   background-color: rgb(46, 39, 39);
