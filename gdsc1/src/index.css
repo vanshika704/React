@@ -3,3 +3,13 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.card{
+  color: aliceblue;
+
+}
+.card-body{
+  color:aliceblue;
+}
+.login{
+  color: aliceblue;
+}
