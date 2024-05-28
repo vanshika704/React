@@ -1,20 +1,25 @@
-
 import PropTypes from 'prop-types'; 
 import './index.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import todoImage from './assets/todo.jpg';
 import download from './assets/download.jpeg';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import Listtodo from './view.jsx'; // Corrected import statement
 
 function App() {
   
   const chores = ["Clean the dishes", "Go to market", "Pay bills"];
 
   return (
-    <div className="card-container">
-      <Enterycard />
-      
-      <Card2 chores={chores} />
-    </div>
+    <Router>
+      <div className="card-container">
+        <Enterycard />
+        <Switch>
+          <Route path="/view" component={Listtodo} />
+        </Switch>
+        <Card2 chores={chores} />
+      </div>
+    </Router>
   );
 }
 
@@ -57,12 +62,11 @@ function Card2({ chores }) {
         ))}
       </ul>
       <div className="card-body">
-        <a href="./viewall.jsx" className="card-link">View all</a>
+        <Link to="/view" className="card-link">View all</Link>
       </div>
     </div>
   );
 }
-
 
 Card2.propTypes = {
   chores: PropTypes.arrayOf(PropTypes.string).isRequired, 

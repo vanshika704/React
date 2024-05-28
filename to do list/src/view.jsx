@@ -5,11 +5,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faPlusSquare } from '@fortawesome/free-regular-svg-icons';
 
-function App() {
+function Listtodo() {
   const handleButtonClick = () => {
-    
     console.log('Button clicked');
-   
   };
 
   return (
@@ -59,4 +57,4 @@ function App() {
   );
 }
 
-export default App;
+export default Listtodo;
