@@ -18,12 +18,13 @@ const SearchBar = ({ onSearch }) => {
   return (
     <form onSubmit={handleSubmit} className="form-inline">
       <div className="input-group">
-        <input
+        <input 
           type="text"
           className="form-control"
           placeholder="Search"
           aria-label="Search"
           color='grey'
+          style={{ borderColor: 'blue' }}
           value={searchTerm}
           onChange={handleChange}
         />
