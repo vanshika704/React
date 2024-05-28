@@ -1,4 +1,4 @@
-/* index.css */
+
 
 @tailwind base;
 @tailwind components;
@@ -9,21 +9,46 @@ h1 {
 }
 
 .searchbar {
-  width: 60%; /* Adjust the width as needed */
-  height: 40px; /* Adjust the height as needed */
- margin-left: 40px; /* Center the search bar horizontally */
-  display: block;}
- /* flex: 1;  */
-.row1{
+  width: 60%; 
+  height: 40px;
+  margin-left: 60px; 
+  display: block;
+}
+
+.row1 {
   justify-content: space-evenly;
 }
+
 .searchbar-container {
   display: flex;
-  align-items: center; /* Vertically center the items */
+  align-items: center; 
 }
 
-
-
-.dropdown {
-  margin-left: 10px; /* Adjust the margin between the input and the button */
+.dropdown { 
+  margin-left: 10px; 
 }
+
+.dropdown-menu {
+  background-color: rgb(46, 39, 39);
+  border: none;
+}
+
+.btn {
+  margin-left: 10px; 
+}
+.icon{
+  margin-left: 50px;
+}
+.list-group{
+  margin-top: 50px;
+}
+.list-group-item{
+  margin-top: 50px;
+}
+.List{
+  width: 500px;
+  justify-content: center;
+}
+/* .firsttodo{
+  margin-top: 30px;
+} */
