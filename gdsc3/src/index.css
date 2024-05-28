@@ -20,7 +20,7 @@ h1 {
   display: flex;
   align-items: center; 
   width: 85%; 
-  margin-left: 300px 
+  margin-left: 300px;
 }
 
 .dropdown { 
@@ -46,21 +46,13 @@ h1 {
   margin-left: auto;
   margin-right: auto; 
 }
-.list-group-item{
-  margin-top: 40px;
-  border-top: none; 
-  border-left:none;
-  border-right:none;
-  border-bottom: 1px solid #363535;
+
+.list-group-item {
+  margin-top: 40px !important;
+  border-top: none !important; 
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid #363535 !important; 
+  padding: 10px 0 !important; 
 }
-.list-group-item:first-child {
-  margin-top: 40px;
-  border-top: none; 
-  border-left:none;
-  border-right:none;
-  border-bottom: 1px solid #363535; 
-  padding: 10px 0; 
-}
-.list-group-item:last-child {border-left: none;
-  border-right: none;
-  border-bottom: 1px solid #363535; }
+
