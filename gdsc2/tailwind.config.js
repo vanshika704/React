@@ -28,7 +28,13 @@ export default { darkMode: 'class',
     },
     borderRadius: {
       '4xl': '2rem',
-    }},
+    },
+    backgroundSize: ({ theme }) => ({
+      auto: 'auto',
+      cover: 'cover',
+      contain: 'contain',
+      ...theme('spacing')
+    })},
   },
   plugins: [],
  
