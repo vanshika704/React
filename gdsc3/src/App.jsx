@@ -9,7 +9,7 @@ function App() {
     <>
       <div>
         <h1>TODO LIST</h1>
-        <div className="Row1">
+        <div className="row1">
           <div className="searchbar-container">
             <input className="searchbar" type="text" placeholder="Search Notes" />
             <div className="dropdown">

@@ -13,14 +13,14 @@ h1 {
 }
 
 .row1 {
-  justify-content: center; /* Center the row */
+  justify-content: center; 
 }
 
 .searchbar-container {
   display: flex;
   align-items: center; 
-  width: 85%; /* Match the width of the searchbar */
-  margin-left: 300px /* Center the container */
+  width: 85%; 
+  margin-left: 300px 
 }
 
 .dropdown { 
@@ -37,16 +37,30 @@ h1 {
 }
 
 .icon {
-  margin-left: 10px; /* Ensure consistent spacing */
+  margin-left: 10px;
 }
 
 .list-group {
-  margin-top: 20px; /* Adjust spacing between search bar and list */
-  width: 60%; /* Match the width of the searchbar */
+  margin-top: 20px; 
+  width: 60%; 
   margin-left: auto;
-  margin-right: auto; /* Center the list */
+  margin-right: auto; 
 }
-
-.list-group-item {
-  margin-top: 10px; /* Reduce the gap between list items */
+.list-group-item{
+  margin-top: 40px;
+  border-top: none; 
+  border-left:none;
+  border-right:none;
+  border-bottom: 1px solid #363535;
 }
+.list-group-item:first-child {
+  margin-top: 40px;
+  border-top: none; 
+  border-left:none;
+  border-right:none;
+  border-bottom: 1px solid #363535; 
+  padding: 10px 0; 
+}
+.list-group-item:last-child {border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #363535; }
