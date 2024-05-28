@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+export default { darkMode: 'class', 
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
   },
   plugins: [],
-  darkMode: 'class', // Enable dark mode with the class strategy
+ 
 }
