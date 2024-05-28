@@ -19,3 +19,65 @@ body {
   margin: 30px;
   box-shadow: cornsilk; /* Add margin between the cards */
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  text-align: center;
+}
+
+.searchbar {
+  width: 60%; 
+  height: 40px;
+  display: block;
+}
+
+.row1 {
+  justify-content: center; 
+}
+
+.searchbar-container {
+  display: flex;
+  align-items: center; 
+  width: 85%; 
+  margin-left: 300px;
+}
+
+.dropdown { 
+  margin-left: 10px; 
+}
+
+.dropdown-menu {
+  background-color: rgb(46, 39, 39);
+  border: none;
+}
+
+.btn {
+  margin-left: 10px; 
+}
+
+.icon {
+  margin-left: 10px;
+}
+
+.list-group {
+   
+  width: 60%; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.list-group-item {
+  margin-top: 10px !important;
+  border-top: none !important; 
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid #363535 !important; 
+  padding: 10px 0 !important; 
+}
+.Add{
+  margin-left: 1400px;
+  margin-top: 250px;
+  font-size: xx-large;
+}
