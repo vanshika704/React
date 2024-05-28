@@ -1,25 +1,24 @@
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './index.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import todoImage from './assets/todo.jpg';
 import download from './assets/download.jpeg';
-// import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-// import Listtodo from './view.jsx'; // Corrected import statement
+import Listtodo from './view.jsx'; // Corrected import statement
 
 function App() {
-  
   const chores = ["Clean the dishes", "Go to market", "Pay bills"];
 
   return (
-    // <Router>
+    <Router>
       <div className="card-container">
         <Enterycard />
-        {/* <Switch> */}
-          {/* <Route path="/view" component={Listtodo} /> */}
-        {/* </Switch> */}
+        <Routes>
+          <Route path="/view" element={<Listtodo />} />
+        </Routes>
         <Card2 chores={chores} />
       </div>
-    // </Router>
+    </Router>
   );
 }
 
@@ -56,18 +55,17 @@ function Card2({ chores }) {
         </div>
       </div>
       <ul className="list-group list-group-flush">
-      
         {chores.map((chore, index) => (
           <li key={index} className="list-group-item">{chore}</li>
         ))}
       </ul>
       <div className="card-body">
-        {/* <Link to="/view" className="card-link">View all</Link> */}
+        <Link to="/view" className="card-link">View all</Link>
       </div>
     </div>
   );
 }
 
 Card2.propTypes = {
-  chores: PropTypes.arrayOf(PropTypes.string).isRequired, 
+  chores: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

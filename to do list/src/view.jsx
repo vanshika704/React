@@ -1,7 +1,5 @@
 
-import "./index.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faPlusSquare } from '@fortawesome/free-regular-svg-icons';
 
@@ -26,7 +24,6 @@ function Listtodo() {
                 <li><a className="dropdown-item" href="#">Professional</a></li>
               </ul>
             </div>
-           
             <button className="btn btn-secondary icon" onClick={handleButtonClick}>
               <FontAwesomeIcon icon={faMoon} />
             </button>
@@ -49,9 +46,9 @@ function Listtodo() {
           </ul>
         </div>
         <div className="Add">
-          {/* FontAwesomeIcon wrapped in a button */}
-          <button className="btn btn-secondary icon"  onClick={handleButtonClick}><FontAwesomeIcon icon={faPlusSquare} /></button>
+          <button className="btn btn-secondary icon" onClick={handleButtonClick}><FontAwesomeIcon icon={faPlusSquare} /></button>
         </div>
+        <Link to="/">Back</Link>
       </div>
     </>
   );
