@@ -1,5 +1,3 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,17 +9,18 @@ h1 {
 .searchbar {
   width: 60%; 
   height: 40px;
-  margin-left: 60px; 
   display: block;
 }
 
 .row1 {
-  justify-content: space-evenly;
+  justify-content: center; /* Center the row */
 }
 
 .searchbar-container {
   display: flex;
   align-items: center; 
+  width: 85%; /* Match the width of the searchbar */
+  margin-left: 300px /* Center the container */
 }
 
 .dropdown { 
@@ -36,19 +35,18 @@ h1 {
 .btn {
   margin-left: 10px; 
 }
-.icon{
-  margin-left: 50px;
+
+.icon {
+  margin-left: 10px; /* Ensure consistent spacing */
 }
-.list-group{
-  margin-top: 50px;
+
+.list-group {
+  margin-top: 20px; /* Adjust spacing between search bar and list */
+  width: 60%; /* Match the width of the searchbar */
+  margin-left: auto;
+  margin-right: auto; /* Center the list */
 }
-.list-group-item{
-  margin-top: 50px;
+
+.list-group-item {
+  margin-top: 10px; /* Reduce the gap between list items */
 }
-.List{
-  width: 500px;
-  justify-content: center;
-}
-/* .firsttodo{
-  margin-top: 30px;
-} */
