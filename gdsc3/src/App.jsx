@@ -2,7 +2,7 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon } from '@fortawesome/free-regular-svg-icons';
+import {  faMoon, faPlusSquare,  } from '@fortawesome/free-regular-svg-icons';
 
 function App() {
   return (
@@ -40,6 +40,7 @@ function App() {
             </li>
           </ul>
         </div>
+        <div className="Add"><FontAwesomeIcon icon={faPlusSquare} /></div>
       </div>
     </>
   );
