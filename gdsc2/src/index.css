@@ -1,12 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-body {
- 
+.navbar {
+  background-color: rgb(253, 253, 252); /* Set navbar background color */
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-h1 {
-  text-align: center; 
-  font-size: xx-large;
-  font-weight: bolder;
+.navbar-transparent {
+  background-color: transparent;
+}
+
+.form-control {
+  width: 100%; /* Make the search bar extend to 100% width */
+  max-width: 800px; /* Set a maximum width for the search bar */
+ 
+  margin-left: 500px;
 }
