@@ -5,12 +5,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import todoImage from './assets/todo.jpg';
 import download from './assets/download.jpeg';
 import Listtodo from './view.jsx'; // Corrected import statement
+import ToggleButton from './togglebutton.jsx';
 
 function App() {
   const chores = ["Clean the dishes", "Go to market", "Pay bills"];
 
   return (
     <Router>
+      <ToggleButton/>
       <div className="card-container">
         <Enterycard />
         <Routes>

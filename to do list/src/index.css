@@ -1,13 +1,28 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #893ea0;
+}
 body {
-  background: linear-gradient(to right, #5c5b5b, #555454);
+ 
   background-size: cover;
   height: 100vh;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
 }
 
+body.dark-mode {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
 .card-container {
   display: flex;
   justify-content: center;
@@ -80,4 +95,20 @@ h1 {
   margin-left: 1400px;
   margin-top: 250px;
   font-size: xx-large;
+}
+.addtodo {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+.alternate {
+  margin-left: 20px;
+  size: 40px;
+}
+.all {
+  margin-left: 20px;
+  size: 40px;
+}
+.btn{
+  margin-left: 20px;
 }
