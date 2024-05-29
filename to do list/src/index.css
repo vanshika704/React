@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to right, #cac8c8, #cac8c8);
+  background: linear-gradient(to right, #5c5b5b, #555454);
   background-size: cover;
   height: 100vh;
   margin: 0;
@@ -68,7 +68,7 @@ h1 {
   margin-right: auto; 
 }
 
-.list-group-item {background-color:#cac8c8 !important;
+.list-group-item {background-color:rgb(245, 243, 243) !important;
   margin-top: 10px !important;
   border-top: none !important; 
   border-left: none !important;
