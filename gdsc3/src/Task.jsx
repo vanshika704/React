@@ -1,4 +1,5 @@
+import "./index.css"
 function Task (){
-    return (<><input type="text" placeholder="Enter Task"></input></>)
+    return (<><input className="addtodo" type="text" placeholder="Enter Task"></input></>)
 }
 export default Task; 
