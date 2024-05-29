@@ -12,7 +12,9 @@ function App() {
 
   return (
     <Router>
-      <ToggleButton/>
+      <div className="toggle-button-container">
+          <ToggleButton/>
+        </div>
       <div className="card-container">
         <Enterycard />
         <Routes>
