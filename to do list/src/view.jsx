@@ -1,7 +1,8 @@
 
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon, faPlusSquare } from '@fortawesome/free-regular-svg-icons';
+import {  faPlusSquare } from '@fortawesome/free-regular-svg-icons';
+import ToggleButton from './togglebutton';
 
 function Listtodo() {
   const handleButtonClick = () => {
@@ -24,9 +25,7 @@ function Listtodo() {
                 <li><a className="dropdown-item" href="#">Professional</a></li>
               </ul>
             </div>
-            <button className="btn btn-secondary icon" onClick={handleButtonClick}>
-              <FontAwesomeIcon icon={faMoon} />
-            </button>
+           <ToggleButton/>
           </div>
         </div>
         <div className="List">
