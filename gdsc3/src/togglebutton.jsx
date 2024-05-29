@@ -22,7 +22,7 @@ const ToggleButton = () => {
   };
 
   return (
-    <button onClick={toggleDarkMode}>
+    <button className='btn btn-primary' onClick={toggleDarkMode}>
       {darkMode ? <FontAwesomeIcon icon={faLightbulb} /> : <FontAwesomeIcon icon={faMoon} />}
     </button>
   );

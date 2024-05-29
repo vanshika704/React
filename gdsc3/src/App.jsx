@@ -34,7 +34,7 @@ function TodoList() {
         <div className="searchbar-container">
           <input className="searchbar" type="text" placeholder="Search Notes" />
           <div className="dropdown">
-            <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               ALL
             </button>
             <ul className="dropdown-menu">
@@ -62,7 +62,7 @@ function TodoList() {
         </ul>
       </div>
       <div className="Add">
-        <button className="btn btn-secondary icon" onClick={handleButtonClick}>
+        <button className="btn btn-primary" type='button' onClick={handleButtonClick}>
           <FontAwesomeIcon icon={faPlusSquare} />
         </button>
       </div>
