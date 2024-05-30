@@ -5,7 +5,7 @@ import './index.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import todoImage from './assets/todo.jpg';
 import download from './assets/download.jpeg';
-import Listtodo from './view.jsx'; // Corrected import statement
+import Listtodo from './view.jsx'; 
 import ToggleButton from './togglebutton.jsx';
 
 function App() {
