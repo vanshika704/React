@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusSquare } from '@fortawesome/free-regular-svg-icons';
 import Task from "./Task.jsx";
 import ToggleButton from './togglebutton.jsx';
-
+import { useEffect, useState } from 'react';
 function App() {
   return (
     <Router>
@@ -20,12 +20,23 @@ function App() {
 
 export default App;
 
+
+
+
+
+
 function TodoList() {
   const navigate = useNavigate();
+  const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    setTasks(savedTasks);
+  }, []);
 
   const handleButtonClick = () => {
     navigate('/task');
-  }
+  };
 
   return (
     <div>
@@ -47,25 +58,21 @@ function TodoList() {
       </div>
       <div className="List">
         <ul className="list-group">
-          <li className="list-group-item">
-            <input className="form-check-input me-1" type="checkbox" value="" id="firstCheckbox"/>
-            <label className="form-check-label" htmlFor="firstCheckbox">First checkbox</label>
-          </li>
-          <li className="list-group-item">
-            <input className="form-check-input me-1" type="checkbox" value="" id="secondCheckbox"/>
-            <label className="form-check-label" htmlFor="secondCheckbox">Second checkbox</label>
-          </li>
-          <li className="list-group-item">
-            <input className="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox"/>
-            <label className="form-check-label" htmlFor="thirdCheckbox">Third checkbox</label>
-          </li>
+          {tasks.map((task, index) => (
+            <li key={index} className="list-group-item">
+              <input className="form-check-input me-1" type="checkbox" value="" id={`checkbox${index}`} />
+              <label className="form-check-label" htmlFor={`checkbox${index}`}>{task}</label>
+            </li>
+          ))}
         </ul>
       </div>
       <div className="Add">
-        <button className="btn btn-primary" type='button' onClick={handleButtonClick}>
+        <button className="btn btn-primary" type="button" onClick={handleButtonClick}>
           <FontAwesomeIcon icon={faPlusSquare} />
         </button>
       </div>
     </div>
   );
 }
+
+
