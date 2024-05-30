@@ -1,10 +1,11 @@
 
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faPlusSquare } from '@fortawesome/free-regular-svg-icons';
+import { faPlusSquare } from '@fortawesome/free-regular-svg-icons';
 import ToggleButton from './togglebutton';
-
-function Listtodo() {
+import "bootstrap/dist/css/bootstrap.min.css";
+function Listtodo({ chores }) {
   const handleButtonClick = () => {
     console.log('Button clicked');
   };
@@ -25,32 +26,32 @@ function Listtodo() {
                 <li><a className="dropdown-item" href="#">Professional</a></li>
               </ul>
             </div>
-           <ToggleButton/>
+            <ToggleButton />
           </div>
         </div>
         <div className="List">
           <ul className="list-group">
-            <li className="list-group-item">
-              <input className="form-check-input me-1 " type="checkbox" value="" id="firstCheckbox" />
-              <label className="form-check-label" htmlFor="firstCheckbox">First checkbox</label>
-            </li>
-            <li className="list-group-item">
-              <input className="form-check-input me-1" type="checkbox" value="" id="secondCheckbox" />
-              <label className="form-check-label" htmlFor="secondCheckbox">Second checkbox</label>
-            </li>
-            <li className="list-group-item">
-              <input className="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" />
-              <label className="form-check-label" htmlFor="thirdCheckbox">Third checkbox</label>
-            </li>
+            {chores.map((chore, index) => (
+              <li key={index} className="list-group-item">
+                <input className="form-check-input me-1" type="checkbox" value="" id={`checkbox${index}`} />
+                <label className="form-check-label" htmlFor={`checkbox${index}`}>{chore}</label>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="Add">
-          <button className="btn btn-secondary icon" onClick={handleButtonClick}><FontAwesomeIcon icon={faPlusSquare} /></button>
+          <button className="btn btn-secondary icon" onClick={handleButtonClick}>
+            <FontAwesomeIcon icon={faPlusSquare} />
+          </button>
         </div>
         <Link to="/">Back</Link>
       </div>
     </>
   );
 }
+
+Listtodo.propTypes = {
+  chores: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default Listtodo;
