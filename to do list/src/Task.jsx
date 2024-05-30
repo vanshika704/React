@@ -1,9 +1,18 @@
-import './index.css';
+
 
 function Task() {
+
+
+ 
+
   return (
-    <div>
-      <input className="addtodo" type="text" placeholder="Enter Task" />
+    <div className="center-container">
+      <input 
+        className="addtodo" 
+        type="text" 
+        placeholder="Enter Task" 
+       
+      />
     </div>
   );
 }
