@@ -20,11 +20,6 @@ function App() {
 
 export default App;
 
-
-
-
-
-
 function TodoList() {
   const navigate = useNavigate();
   const [tasks, setTasks] = useState([]);
