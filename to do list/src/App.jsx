@@ -30,7 +30,7 @@ function App() {
       <div className="card-container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         <Enterycard addChore={addChore} />
         <Routes>
-          <Route path="/view" element={<Listtodo chores={chores} />} />
+        <Route path="/view" element={<Listtodo chores={chores} />} />
         </Routes>
         <Card2 chores={chores} />
       </div>
