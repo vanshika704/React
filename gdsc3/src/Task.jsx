@@ -1,9 +1,8 @@
-
 import './index.css';
 
 function Task() {
   return (
-    <div>
+    <div className="center-container">
       <input className="addtodo" type="text" placeholder="Enter Task" />
     </div>
   );
