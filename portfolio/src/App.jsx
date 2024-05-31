@@ -103,7 +103,7 @@ function Home() {
 function Introduction() {
   return (
     <div>
-      <h1>Introduction</h1>
+     <div></div>
       <p>This is the Introduction page.</p>
     </div>
   );
