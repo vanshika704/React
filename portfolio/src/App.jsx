@@ -4,7 +4,7 @@ import { Social } from './social.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
+import {Introduction} from "./intro.jsx";
 function App() {
   return (
     <Router>
@@ -100,14 +100,7 @@ function Home() {
   );
 }
 
-function Introduction() {
-  return (
-    <div>
-     <div></div>
-      <p>This is the Introduction page.</p>
-    </div>
-  );
-}
+
 
 function Skills() {
   return (
