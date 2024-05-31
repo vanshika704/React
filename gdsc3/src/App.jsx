@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusSquare } from '@fortawesome/free-regular-svg-icons';
 import Task from "./Task.jsx";
-import ToggleButton from './togglebutton.jsx';
+import ToggleButton from './togglebutton.jsx';//theme change
 import { useEffect, useState } from 'react';
 function App() {
   return (
