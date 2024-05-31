@@ -54,7 +54,7 @@ function TodoList() {
       </div>
       <div className="List">
         <ul className="list-group">
-          {tasks.map((task, index) => (
+          {tasks.map((task, index) => (// mapping in tasks with index , returning list and key ,key used for index and in checkbox for task to be shown serial wise
             <li key={index} className="list-group-item">
               <input className="form-check-input me-1" type="checkbox" value="" id={`checkbox${index}`} />
               <label className="form-check-label" htmlFor={`checkbox${index}`}>{task}</label>
