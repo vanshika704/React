@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusSquare } from '@fortawesome/free-regular-svg-icons';
 import Task from "./Task.jsx";
 import ToggleButton from './togglebutton.jsx';//theme change
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';//use State: kind of variable in which you can update the state of a particular varibale;
+//use effect: The useEffect hook allows you to perform side effects in your components.
 function App() {
   return (
     <Router>
