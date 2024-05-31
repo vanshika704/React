@@ -3,16 +3,24 @@ import './index.css';
 import { Social } from './social.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <div className="content">
-        <Image />
-        <Intro />
+    <Router>
+      <div>
+        <Navbar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/introduction" element={<Introduction />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/task" element={<></>} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
@@ -22,9 +30,9 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           Vanshika Sharma
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -39,19 +47,19 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="src/Introduction.jsx">
+              <Link className="nav-link" to="/introduction">
                 Introduction
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/skills">
                 Skills
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/blogs">
                 Blogs
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -80,6 +88,42 @@ function Navbar() {
         </div>
       </div>
     </nav>
+  );
+}
+
+function Home() {
+  return (
+    <div>
+      <Image />
+      <Intro />
+    </div>
+  );
+}
+
+function Introduction() {
+  return (
+    <div>
+      <h1>Introduction</h1>
+      <p>This is the Introduction page.</p>
+    </div>
+  );
+}
+
+function Skills() {
+  return (
+    <div>
+      <h1>Skills</h1>
+      <p>This is the Skills page.</p>
+    </div>
+  );
+}
+
+function Blogs() {
+  return (
+    <div>
+      <h1>Blogs</h1>
+      <p>This is the Blogs page.</p>
+    </div>
   );
 }
 
