@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<TodoList />} />
+        <Route path="/" element={<TodoList />} /> 
         <Route path="/task" element={<Task />} />
       </Routes>
     </Router>
@@ -26,7 +26,7 @@ function TodoList() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];// use effect kehra h ki local storage se tasks naam ka saaman le aao . or usko json me convert kiya 
     setTasks(savedTasks);
   }, []);
 
