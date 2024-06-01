@@ -15,8 +15,8 @@ function App() {
   });
 
   useEffect(() => {
-    localStorage.setItem('chores', JSON.stringify(chores));
-  }, [chores]);
+    localStorage.setItem('chores', JSON.stringify(chores));// jb rendering hogi , toh ye run hojaye isliye use effect use kiya
+  }, [chores]);// is case me local storage me chores save krwaye jaare h
 
   const addChore = (chore) => {
     setChores([...chores, chore]);
