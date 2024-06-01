@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';// use state is kind of variable with which you can update the state with time
 import PropTypes from 'prop-types';// use of props
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';// navigation
 import './index.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import todoImage from './assets/todo.jpg';
