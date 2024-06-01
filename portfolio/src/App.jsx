@@ -120,6 +120,7 @@ function Introduction() {
               <li><strong>Flutter:</strong> Crafting beautiful, natively compiled applications for mobile, web, and desktop.</li>
               <li><strong>Firebase:</strong> Utilizing this powerful platform to build and manage scalable apps.</li>
               <li><strong>React:</strong> Creating dynamic and responsive user interfaces for web applications.</li>
+              <li><strong>More:</strong>C, C++, Javascript , Python , Html , CSS,Bootstrap , Chakra , Tailwind . </li>
             </ul>
           </p>
           <p>
