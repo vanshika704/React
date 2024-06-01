@@ -19,7 +19,7 @@ function App() {
   }, [chores]);// is case me local storage me chores save krwaye jaare h
 
   const addChore = (chore) => {
-    setChores([...chores, chore]);
+    setChores([...chores, chore]);// chores yha set kiye jaare h ,  update bhi
   };
 
   return (
