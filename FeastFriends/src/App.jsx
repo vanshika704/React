@@ -1,6 +1,6 @@
 
 import './index.css'; // Ensure this points to your CSS file
-import "bootstrap/dist/css/bootstrap.min.css"
+
 function App() {
   return (
     <>
@@ -21,8 +21,8 @@ function Credentials() {
     <div className="credentials">
       <input type="text" placeholder="Enter Email" />
       <input type="password" placeholder="Enter Password" />
-      <button>Login</button>
-      <button>Signin with Google</button>
+      <button className="custom-button">Sign In with Google </button>
+
     </div>
   );
 }
