@@ -9,7 +9,7 @@ function AppBar() {
           <div className="explore">
           
           <img src="assets/navlogo.png" alt="Logo" width="100" height="100" className="d-inline-block align-text-top navlogo" />
-          <h1>EXPLORE....</h1>
+          <h1>Explore....</h1>
         </div>
         </a>
        
