@@ -1,5 +1,7 @@
+
 import './index.css'; // Ensure this points to your CSS file
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Page2 from "./Page2"; // Import Page2 component
 
 function App() {
   return (
@@ -19,10 +21,6 @@ function Home() {
       <Credentials />
     </>
   );
-}
-
-function Page2() {
-  return <div>This is Page 2 content!</div>;
 }
 
 function Logo() {
