@@ -1,9 +1,10 @@
+import AppBar from "./appbar";
 
 
 function Page2() {
   return (
     <div>
-      <h1>Welcome to Page 2</h1>
+      <AppBar/>
     </div>
   );
 }

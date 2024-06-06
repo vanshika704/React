@@ -1,7 +1,7 @@
 
-import './index.css'; // Ensure this points to your CSS file
+
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Page2 from "./Page2"; // Import Page2 component
+import Page2 from "./Page2"; 
 
 function App() {
   return (

@@ -1,6 +1,5 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-
 /* Your custom styles */
 body {
   background-color: black;
@@ -9,7 +8,51 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;  
+}
+
+/* Move the navbar to the top */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+  background-color: black; /* Ensure it's above other content */
+}
+
+/* Adjust padding for the main content */
+.main-content {
+  padding-top: 60px; /* Adjust as per your navbar height */
+}
+
+.navbar {
+  background-color: black; /* Set background color to black */
+  align-items: flex-start;
+}
+
+
+.explore {
+  font-size: small; /* Decrease the font size */
+  color:  rgb(250, 204, 106); 
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  font-family: "Poppins", sans-serif;
+}
+
+.explore img {
+  margin-right: 10px; /* Adjust spacing between image and text */
+  height: 50px; /* Decrease the height of the image */
+  width: 50px; /* Decrease the width of the image */
+}
+
+.navlogo {
+  font-size: small; /* Decrease the font size */
+}
+
+/* Styles for the navbar links */
+.navbar a {
+  color:  rgb(250, 204, 106);  /* Set text color to white */
 }
 
 .logo {
@@ -17,9 +60,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 400px;
-  width: 400px;
-  margin-bottom: 20px; /* Space between logo and credentials */
+  height: 400px; /* Decrease the height of the logo */
+  width: 400px; /* Decrease the width of the logo */
 }
 
 .credentials {
@@ -35,21 +77,27 @@ body {
   border: 4px double rgb(250, 204, 106); /* Double size of the border */
   background-color: black;
   color:  rgb(248, 202, 102);
-  font-size: 16px; /* Adjust font size */
-}
-.custom-button {
-  width: 200px; /* Adjust width as needed */
-  padding: 10px 20px; /* Adjust padding as needed */
-  border-radius: 20px; /* Adjust border radius to get curved edges */
-  background-color: rgb(248, 202, 102);
-  color: black; /* Text color */
-  font-size: 16px; /* Adjust font size as needed */
-  border: none; /* Remove default button border */
-  outline: none; /* Remove default button outline */
-  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 16px; 
 }
 
+.custom-button {
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 20px; 
+  background-color: rgb(248, 202, 102);
+  color: black;
+  font-size: 16px; 
+  border: none; 
+  outline: none; 
+  cursor: pointer; 
+}
 
 .custom-button:hover {
-  background-color: #f8f8f5; /* Change background color on hover */
+  background-color: #f8f8f5; 
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
