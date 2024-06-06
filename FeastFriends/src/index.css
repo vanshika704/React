@@ -34,14 +34,14 @@ body {
   display: flex;
   align-items: center;
   font-family: "Poppins", sans-serif;
-  height: 40px; /* Adjust height as needed */
-  width: 40px; /* Adjust width as needed */
+  height: 40px;
+  width: 40px; 
 }
 
 .explore img {
   margin-right: 50px;
-  height: 60px; /* Adjust height to match .explore */
-  width: 150px; /* Adjust width to match .explore */
+  height: 60px; 
+  width: 150px; 
 }
 
 .navbar a {
