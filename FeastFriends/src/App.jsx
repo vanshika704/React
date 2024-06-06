@@ -1,6 +1,6 @@
 
 import './index.css'; // Ensure this points to your CSS file
-
+import "bootstrap/dist/css/bootstrap.min.css"
 function App() {
   return (
     <>
