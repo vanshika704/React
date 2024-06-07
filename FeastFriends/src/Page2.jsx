@@ -30,7 +30,7 @@ const FoodGallery = () => {
         const response = await axios.get('https://api.unsplash.com/photos/random', {
           params: {
             query: 'food',
-            count: 10, // Adjusted for faster loading
+            count: 30, 
             client_id: '-SXu-p1sLlhOb9e6jqiKCfP46WmqjCl3DeGLt_L2-tw'
           }
         });
