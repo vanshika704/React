@@ -129,7 +129,7 @@ body {
 }
 .food-gallery-wrapper {
   flex: 50;
-  height: calc(100vh - 50px); /* Adjusted for the height of AppBar */
+  height: calc(100vh - 50px); 
   overflow-y: auto;
 }
 .food-gallery-wrapper::-webkit-scrollbar {
