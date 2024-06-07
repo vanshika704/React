@@ -4,8 +4,8 @@ body {
   background-color: black;
   margin: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start; 
   flex-direction: column;
   height: 100vh;  
 }
@@ -29,7 +29,8 @@ body {
   align-items: flex-start;
 }
 
-.explore {font-size: small;
+.explore {
+  font-size: small;
   color: rgb(250, 204, 106); 
   display: flex;
   align-items: center;
@@ -88,6 +89,19 @@ body {
 .custom-button:hover {
   background-color: #f8f8f5; 
 }
-.food-gallery{
-  align-items: flex-start;
+
+.food-gallery {
+  display: block;
+  padding: 20px;
+  width: 100%; 
+}
+
+.food-gallery .photo {
+  margin-bottom: 10px; 
+}
+
+.food-gallery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

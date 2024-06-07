@@ -45,7 +45,7 @@ const FoodGallery = () => {
       {photos.map(photo => (
         <div key={photo.id} className="photo">
           <img src={photo.urls.small} alt={photo.alt_description} />
-          <p>.</p>
+          <p></p>
         </div>
       ))}
     </div>
