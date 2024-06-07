@@ -2,7 +2,7 @@
 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Page2 from "./Page2"; 
-
+import "./App.css"
 function App() {
   return (
     <Router>
@@ -16,10 +16,10 @@ function App() {
 
 function Home() {
   return (
-    <>
+    <><div className='login'>
       <Logo />
       <Credentials />
-    </>
+      </div></>
   );
 }
 
