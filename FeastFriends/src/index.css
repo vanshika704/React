@@ -92,7 +92,7 @@ body {
 }
 
 .food-gallery {
-  flex: 50; /* Adjust the width ratio as needed */
+  flex: 50; 
   padding: 20px;
 }
 
