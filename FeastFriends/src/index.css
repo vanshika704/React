@@ -127,3 +127,11 @@ body {
   color: white; 
   font-family:  "Poppins", sans-serif; ;
 }
+.food-gallery-wrapper {
+  flex: 50;
+  height: calc(100vh - 50px); /* Adjusted for the height of AppBar */
+  overflow-y: auto;
+}
+.food-gallery-wrapper::-webkit-scrollbar {
+  display: none; 
+}

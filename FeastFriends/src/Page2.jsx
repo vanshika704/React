@@ -8,7 +8,9 @@ function Page2() {
     <div>
       <AppBar />
       <div className="container">
-        <FoodGallery />
+        <div className="food-gallery-wrapper">
+          <FoodGallery />
+        </div>
         <MainPageItems />
       </div>
     </div>
