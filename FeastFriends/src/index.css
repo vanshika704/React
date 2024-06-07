@@ -119,7 +119,7 @@ body {
 .container {
   display: flex;
   width: 100%;
-  padding-top: 50px; /* Ensure there is space for the fixed navbar */
+  padding-top: 50px; 
 }
 .MainPageItems {
   flex: 50; 
