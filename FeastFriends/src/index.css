@@ -88,3 +88,6 @@ body {
 .custom-button:hover {
   background-color: #f8f8f5; 
 }
+.food-gallery{
+  align-items: flex-start;
+}
