@@ -1,7 +1,7 @@
 import  { useEffect, useState } from 'react';
 import axios from 'axios';
 import AppBar from "./appbar";
-import './index.css'; // Adjust this path as necessary
+import './index.css'; 
 
 function Page2() {
   return (
