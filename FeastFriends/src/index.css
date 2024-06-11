@@ -8,7 +8,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
   height: 100vh;
-
+  font-family: "DM Serif Text", serif;
 }
 
 .navbar {
@@ -21,35 +21,32 @@ body {
   box-shadow: 0px 2px 5px rgb(250, 204, 106);
   display: flex;
   align-items: center;
+  height: 40px; /* Updated height */
 }
 
 .main-content {
-  padding-top: 50px;
+  padding-top: 50px; /* Adjusted to account for increased navbar height */
 }
 
 .explore {
   font-size: 15px;
-  color: rgb(250, 204, 106);
+  color: rgb(248, 247, 243);
   display: flex;
-  align-items:center;
-  font-family: "Poppins", sans-serif;
-  height: 40px;
-  width: 40px;
-
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40px; /* Updated height */
+  width: 60px;
+  font-family: "DM Serif Text", serif;
 }
 
 .dm-serif-text-regular {
-  font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .dm-serif-text-regular-italic {
-  font-family: "DM Serif Text", serif;
-  font-weight: 400;
   font-style: italic;
 }
-
 
 .navbar a {
   color: rgb(250, 204, 106);
@@ -62,14 +59,14 @@ body {
   background-size: contain;
   height: 380px;
   width: 380px;
-  margin-left: 480px;
+  margin-left: 480px; /* Adjusted margin */
 }
 
 .credentials {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 480px;
+  margin-left: 480px; /* Adjusted margin */
 }
 
 .credentials input {
@@ -99,20 +96,18 @@ body {
   background-color: #f8f8f5;
 }
 
-
-
 .login {
   background-color: black;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  width: 1240px;
+  width: 1240px; 
   height: 100vh;
 }
 
 .navlogo {
-  height: 60px;
+  height: 40px;
   width: 200px;
 }
 
@@ -129,4 +124,14 @@ body {
 
 .breadcrumb-link-active {
   color: white;
+}
+
+.MainPagebody {
+  background-color: black;
+  color: #f8f8f5;
+  padding: 20px; 
+  margin-top: 40px; 
+  width: 1250px;
+  height: calc(100vh - 60px); 
+  font-family: "DM Serif Text", serif; 
 }
