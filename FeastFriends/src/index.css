@@ -4,8 +4,8 @@ body {
   background-color: black;
   margin: 0;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: flex-start; /* Align items to start */
+  align-items: flex-start; /* Align items to start */
   flex-direction: column;
   height: 100vh;
 }
@@ -18,15 +18,12 @@ body {
   z-index: 1000;
   background-color: black;
   box-shadow: 0px 2px 5px rgb(250, 204, 106);
+  display: flex; /* Ensure flexbox layout for alignment */
+  align-items: center; /* Center items vertically */
 }
 
 .main-content {
-  padding-top: 50px;
-}
-
-.navbar {
-  background-color: black;
-  align-items: flex-start;
+  padding-top: 50px; /* Adjust padding to avoid overlap with navbar */
 }
 
 .explore {
@@ -56,13 +53,14 @@ body {
   background-size: contain;
   height: 400px;
   width: 400px;
-
+  margin-left: 500px;
 }
 
 .credentials {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 500px;
 }
 
 .credentials input {
@@ -115,6 +113,6 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  margin-left: 500px;
-}
 
+  width: 1350px;
+}
