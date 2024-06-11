@@ -1,22 +1,12 @@
 
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
+import AppBar from './appbar';
 
-function Home() {
+function MainPage() {
   return (
-    <Breadcrumb spacing='8px'>
-      <BreadcrumbItem>
-        <BreadcrumbLink href='#'>Home</BreadcrumbLink>
-      </BreadcrumbItem>
-
-      <BreadcrumbItem>
-        <BreadcrumbLink href='#'>About</BreadcrumbLink>
-      </BreadcrumbItem>
-
-      <BreadcrumbItem isCurrentPage>
-        <BreadcrumbLink href='#'>Contact</BreadcrumbLink>
-      </BreadcrumbItem>
-    </Breadcrumb>
+    <div>
+      <AppBar />
+    </div>
   );
 }
 
-export default Home;
+export default MainPage;

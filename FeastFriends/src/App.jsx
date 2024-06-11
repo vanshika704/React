@@ -2,12 +2,13 @@
 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
+import MainPage from './Page2';
 
 function App() {
   return (
     <Router>
       <Routes>
-       
+        <Route path="/Page2" element={<MainPage />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>

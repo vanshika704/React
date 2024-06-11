@@ -4,8 +4,8 @@ body {
   background-color: black;
   margin: 0;
   display: flex;
-  justify-content: flex-start; /* Align items to start */
-  align-items: flex-start; /* Align items to start */
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   height: 100vh;
 }
@@ -18,12 +18,12 @@ body {
   z-index: 1000;
   background-color: black;
   box-shadow: 0px 2px 5px rgb(250, 204, 106);
-  display: flex; /* Ensure flexbox layout for alignment */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  align-items: center;
 }
 
 .main-content {
-  padding-top: 50px; /* Adjust padding to avoid overlap with navbar */
+  padding-top: 50px;
 }
 
 .explore {
@@ -36,11 +36,7 @@ body {
   width: 40px;
 }
 
-.explore img {
-  margin-right: 50px;
-  height: 60px;
-  width: 160px;
-}
+
 
 .navbar a {
   color: rgb(250, 204, 106);
@@ -113,6 +109,24 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100vh;
+}
 
-  width: 1350px;
+.navlogo {
+  height: 60px;
+  width: 150px;
+}
+
+.breadcrumb-link {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover,
+.breadcrumb-link:focus {
+  color: white;
+}
+
+.breadcrumb-link-active {
+  color: white;
 }
