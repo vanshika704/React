@@ -115,29 +115,6 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  margin-left: 550px;
+  margin-left: 500px;
 }
 
-.container {
-  display: flex;
-  width: 100%;
-  padding-top: 50px;
-}
-
-.MainPageItems {
-  flex: 50;
-  padding: 20px;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  ;
-}
-
-.food-gallery-wrapper {
-  flex: 50;
-  height: calc(100vh - 50px);
-  overflow-y: auto;
-}
-
-.food-gallery-wrapper::-webkit-scrollbar {
-  display: none;
-}
