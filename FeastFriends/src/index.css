@@ -78,7 +78,7 @@ width:1250px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 480px; /* Adjusted margin */
+  margin-left: 480px;
 }
 
 .credentials input {
