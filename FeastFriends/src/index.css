@@ -1,3 +1,5 @@
+/* index.css */
+
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 body {
@@ -21,8 +23,8 @@ body {
   box-shadow: none;
   display: flex;
   align-items: center;
-width:1250px;
-  height: 50px; 
+  width: 1250px;
+  height: 50px;
 }
 
 .main-content {
@@ -36,10 +38,8 @@ width:1250px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
   font-family: "DM Serif Text", serif;
   padding-top: 10px;
-  
 }
 
 .dm-serif-text-regular {
@@ -55,14 +55,14 @@ width:1250px;
   color: rgb(250, 204, 106);
   float: left;
 }
-.navlogo{
- height:100px;
- width: 100px;
-  margin-right: 730px;
+
+.navlogo {
+  height: 100px;
+  width: 100px;
+  margin-right: 100px;
   margin-left: 0px;
   margin-top: 50px;
 }
-
 
 .logo {
   background-image: url('src/assets/logo.png');
@@ -71,7 +71,7 @@ width:1250px;
   background-size: contain;
   height: 380px;
   width: 380px;
-  margin-left: 480px; 
+  margin-left: 480px;
 }
 
 .credentials {
@@ -79,6 +79,19 @@ width:1250px;
   flex-direction: column;
   align-items: center;
   margin-left: 480px;
+}
+
+hr {
+  float: right;
+  width: 70%;
+  margin-top: 0px;
+  color: aliceblue;
+  height: 1px;
+}
+
+.imagecontainer {
+  display: flex;
+  align-items: center;
 }
 
 .credentials input {
@@ -114,18 +127,16 @@ width:1250px;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  width: 1240px; 
+  width: 1240px;
   height: 100vh;
 }
-
-
 
 .breadcrumb-link {
   font-size: 23px;
   color: white;
   text-decoration: none;
   padding: 10px;
- float: left;
+  float: left;
 }
 
 .breadcrumb-link:hover,
@@ -140,10 +151,29 @@ width:1250px;
 .MainPagebody {
   background-color: black;
   color: #f8f8f5;
-  padding: 20px; 
-  margin-top: 40px; 
+  padding: 20px;
+  margin-top: 40px;
   width: 1250px;
-  height: calc(100vh - 60px); 
-  font-family: "DM Serif Text", serif; 
+  height: calc(100vh - 60px);
+  font-family: "DM Serif Text", serif;
 }
 
+.breadcrumb-divider {
+  border-bottom: 1px solid white;
+  width: 100%;
+  margin-top: 5px; /* Adjust as needed */
+}
+.breadcrumb-container {
+  border-bottom: 2px solid white;
+  margin-right: 30px;
+  width:2500px;
+  
+  float: right;
+  font-size: 15px;
+  color: rgb(248, 247, 243);
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  font-family: "DM Serif Text", serif;
+  padding-top: 10px;
+}
