@@ -5,10 +5,13 @@ function MainPage() {
     <div>
       <AppBar />
       <div className='MainPagebody'>
-       
+       <Food1/>
       </div>
     </div>
   );
 }
 
 export default MainPage;
+function Food1(){
+  return(<img src="src/assets/food3.jpg" alt="Logo" width={1290} height={300} />)
+}
