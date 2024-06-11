@@ -7,7 +7,7 @@ function AppBar() {
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           <div className="explore">
-            <img src="assets/navlogo.png" alt="Logo" className="navlogo" height={100} width={100} />
+            <img src="src/assets/logo.png" alt="Logo" className="navlogo"  />
             <Breadcrumb spacing="50px" separator=" ">
               <BreadcrumbItem>
                 <BreadcrumbLink href="#">Home</BreadcrumbLink>
