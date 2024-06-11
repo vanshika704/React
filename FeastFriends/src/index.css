@@ -8,6 +8,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
   height: 100vh;
+
 }
 
 .navbar {
@@ -27,7 +28,7 @@ body {
 }
 
 .explore {
-  font-size: small;
+  font-size: 15px;
   color: rgb(250, 204, 106);
   display: flex;
   align-items: center;
@@ -47,16 +48,16 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 400px;
-  width: 400px;
-  margin-left: 500px;
+  height: 380px;
+  width: 380px;
+  margin-left: 480px;
 }
 
 .credentials {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 500px;
+  margin-left: 480px;
 }
 
 .credentials input {
@@ -79,27 +80,14 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .custom-button:hover {
   background-color: #f8f8f5;
 }
 
-.food-gallery {
-  flex: 50;
-  padding: 20px;
-}
 
-.food-gallery .photo {
-  margin-bottom: 10px;
-}
-
-.food-gallery img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 
 .login {
   background-color: black;
@@ -107,13 +95,13 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  width: 100%;
+  width: 1240px;
   height: 100vh;
 }
 
 .navlogo {
   height: 60px;
-  width: 150px;
+  width: 100px;
 }
 
 .breadcrumb-link {
