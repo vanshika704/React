@@ -5,7 +5,7 @@ function MainPage() {
     <div>
       <AppBar />
       <div className='MainPagebody'>
-        hi
+       
       </div>
     </div>
   );

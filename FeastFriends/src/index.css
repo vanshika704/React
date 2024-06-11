@@ -18,14 +18,16 @@ body {
   right: 0;
   z-index: 1000;
   background-color: black;
-  box-shadow: 0px 2px 5px rgb(250, 204, 106);
+  box-shadow: none;
   display: flex;
   align-items: center;
-  height: 40px; /* Updated height */
+width:1250px;
+  height: 50px; 
 }
 
 .main-content {
-  padding-top: 50px; /* Adjusted to account for increased navbar height */
+  padding-top: 50px;
+  width: 1250px;
 }
 
 .explore {
@@ -34,9 +36,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 40px; /* Updated height */
-  width: 60px;
+
   font-family: "DM Serif Text", serif;
+  padding-top: 10px;
+  
 }
 
 .dm-serif-text-regular {
@@ -50,7 +53,16 @@ body {
 
 .navbar a {
   color: rgb(250, 204, 106);
+  float: left;
 }
+.navlogo{
+ height:100px;
+ width: 100px;
+  margin-right: 730px;
+  margin-left: 0px;
+  margin-top: 50px;
+}
+
 
 .logo {
   background-image: url('src/assets/logo.png');
@@ -59,7 +71,7 @@ body {
   background-size: contain;
   height: 380px;
   width: 380px;
-  margin-left: 480px; /* Adjusted margin */
+  margin-left: 480px; 
 }
 
 .credentials {
@@ -106,15 +118,14 @@ body {
   height: 100vh;
 }
 
-.navlogo {
-  height: 40px;
-  width: 200px;
-}
+
 
 .breadcrumb-link {
-  font-size: 20px;
+  font-size: 23px;
   color: white;
   text-decoration: none;
+  padding: 10px;
+ float: left;
 }
 
 .breadcrumb-link:hover,
@@ -135,3 +146,4 @@ body {
   height: calc(100vh - 60px); 
   font-family: "DM Serif Text", serif; 
 }
+

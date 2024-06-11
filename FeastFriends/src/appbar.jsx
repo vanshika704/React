@@ -7,8 +7,9 @@ function AppBar() {
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           <div className="explore">
-            <img src="src/assets/logo.png" alt="Logo" className="navlogo"  />
-            <Breadcrumb spacing="50px" separator=" ">
+            <img src="src/assets/logo.png" alt="Logo" className="navlogo" />
+            <hr className="breadcrumb-divider" />
+            <Breadcrumb spacing="10px" separator=" ">
               <BreadcrumbItem>
                 <BreadcrumbLink href="#">Home</BreadcrumbLink>
               </BreadcrumbItem>
@@ -31,5 +32,4 @@ function AppBar() {
     </nav>
   );
 }
-
 export default AppBar;
