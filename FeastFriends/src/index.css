@@ -150,7 +150,7 @@ hr {
   height: calc(100vh - 60px);
   font-family: "DM Serif Text", serif;
   display: flex; /* Add display flex */
-  justify-content: flex-start; /* Change to flex-start */
+  justify-content: flex-start; 
 }
 
 .food1 {
