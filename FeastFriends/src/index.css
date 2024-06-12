@@ -188,7 +188,7 @@ hr {
   width: 1300px;
   height: 500px;
   margin-right: 50px;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .imagemain {
@@ -228,7 +228,7 @@ hr {
   text-align: center;
   height: 500px;
   width: 1250px;
-  margin-top: 50px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
