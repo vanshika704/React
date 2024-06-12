@@ -1,5 +1,6 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+
 body {
   background-color: black;
   margin: 0;
@@ -235,8 +236,13 @@ hr {
 }
 .FeastFriends{
   color:rgb(250, 204, 106);
-  font-family: "DM Serif Text", serif;
-  font-size: 17px;
+  font-family: "Great Vibes",cursive;
+  font-size: 35px;
   display: flex;
   white-space: nowrap;
+}
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
