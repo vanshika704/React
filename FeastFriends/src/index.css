@@ -179,10 +179,27 @@ hr {
   padding-top: 10px;
 }
 
-.imagemain {
-  width: 1300px; 
-  height: 500px; 
-  position: fixed;
+.image-container {
+  position: relative;
+  width: 1300px;
+  height: 500px;
   margin-right: 50px;
   margin-top: 40px;
+}
+
+.imagemain {
+  width: 100%;
+  height: 100%;
+}
+
+.grey-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: grey;
+  color: white;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
 }
