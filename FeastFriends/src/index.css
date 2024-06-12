@@ -180,8 +180,8 @@ hr {
 }
 
 .imagemain {
-  width: 1250px; /* Adjust width to fit content */
-  height: 500px; /* Maintain aspect ratio */
+  width: 1250px; 
+  height: 500px; 
   position: fixed;
   margin-left: 30px;
   margin-top: 40px;
