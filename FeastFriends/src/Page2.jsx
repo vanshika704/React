@@ -13,5 +13,5 @@ function MainPage() {
 
 export default MainPage;
 function Food1(){
-  return(<img src="src/assets/food3.jpg" alt="Logo" width={1290} height={300} />)
+  return(<img src="src/assets/food8.avif" alt="Logo" width={990} height={150} />)
 }

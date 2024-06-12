@@ -124,7 +124,7 @@ hr {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  width: 1240px;
+  width: 1440px;
   height: 100vh;
 }
 
@@ -150,7 +150,7 @@ hr {
   color: #f8f8f5;
   padding: 20px;
   margin-top: 40px;
-  width: 1350px;
+  width: 1450px;
   height: calc(100vh - 60px);
   font-family: "DM Serif Text", serif;
   display: flex; /* Add display flex */
