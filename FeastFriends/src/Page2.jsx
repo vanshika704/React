@@ -7,7 +7,8 @@ function MainPage() {
       <AppBar />
       <div className='MainPagebody'>
         <Food1 />
-      </div>
+        
+      </div><Info/>
     </div>
   );
 }
@@ -25,3 +26,6 @@ function Food1() {
   );
 }
 
+function Info(){
+  return(<div className='info'>hello</div>)
+}
