@@ -155,7 +155,7 @@ hr {
 
 .food1 {
   width: 1250px; /* Set width to 50% */
-  height: 200px; /* Maintain aspect ratio */
+  height: 200px; 
   max-width: 1250px;
 }
 
