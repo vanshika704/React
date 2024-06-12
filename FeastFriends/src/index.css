@@ -149,7 +149,7 @@ hr {
   width: 1450px;
   height: calc(100vh - 60px);
   font-family: "DM Serif Text", serif;
-  display: flex; /* Add display flex */
+  display: flex; 
   justify-content: flex-start; 
 }
 
