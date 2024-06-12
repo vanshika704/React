@@ -234,6 +234,9 @@ hr {
   align-items: center;
   flex-direction: column;
 }
+.text-overlay h1 {
+  margin-bottom: 50px; 
+}
 .FeastFriends{
   color:rgb(250, 204, 106);
   font-family: "Great Vibes",cursive;
