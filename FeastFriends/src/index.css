@@ -23,6 +23,7 @@ body {
   align-items: center;
   width: 1350px;
   height: 50px;
+  position: fixed;
 }
 
 .main-content {
@@ -38,6 +39,7 @@ body {
   justify-content: space-evenly;
   font-family: "DM Serif Text", serif;
   padding-top: 10px;
+  position: fixed;
 }
 
 .dm-serif-text-regular {
@@ -60,6 +62,7 @@ body {
   margin-right: 100px;
   margin-left: 0px;
   margin-top: 50px;
+  position: relative;
 }
 
 .logo {
@@ -211,4 +214,22 @@ hr {
   background-color: #242423;
   height: 1350px;
   width: 100%;
+}
+.text-overlay {
+  position: absolute;
+  bottom: 0px; 
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(26, 26, 26, 0.432); 
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  height: 500px;
+  width: 1250px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
