@@ -3,11 +3,10 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
 
 function AppBar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-black">
+    <nav className="navbar navbar-expand-lg navbar-light bg-black"> 
       <div className="container-fluid">
-        <div className="imagecontainer">
-          <img src="src/assets/logo.png" alt="Logo" className="navlogo" />
-        </div>
+      <div className="FeastFriends">Feast Friends</div>
+       
         <Breadcrumb spacing="10px" separator=" " className="breadcrumb-container">
           <BreadcrumbItem>
             <BreadcrumbLink href="#">Home</BreadcrumbLink>

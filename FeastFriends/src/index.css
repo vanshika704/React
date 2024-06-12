@@ -59,7 +59,7 @@ body {
 .navlogo {
   height: 100px;
   width: 100px;
-  margin-right: 100px;
+  margin-right: 70px;
   margin-left: 0px;
   margin-top: 50px;
   position: relative;
@@ -232,4 +232,11 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.FeastFriends{
+  color:rgb(250, 204, 106);
+  font-family: "DM Serif Text", serif;
+  font-size: 17px;
+  display: flex;
+  white-space: nowrap;
 }
