@@ -147,22 +147,22 @@ hr {
   padding: 20px;
   margin-top: 40px;
   width: 1450px;
-  height: calc(100vh - 60px);
   font-family: "DM Serif Text", serif;
-  display: flex; 
-  justify-content: flex-start; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .food1 {
-  width: 1250px; 
-  height: 200px; 
+  width: 1250px;
+  height: 200px;
   max-width: 1250px;
 }
 
 .breadcrumb-divider {
   border-bottom: 1px solid white;
   width: 100%;
-  margin-top: 5px; 
+  margin-top: 5px;
 }
 
 .breadcrumb-container {
@@ -195,15 +195,20 @@ hr {
 .grey-container {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: grey;
+  left: 50px;
+  background-color: rgb(61, 71, 63);
   color: white;
   padding: 20px;
-  width: 50%;
-  text-align: center;
+  width: 90%;
+  height: 150px;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  transform: translateY(50%);
 }
-.info{
-background-color: #242423;
-height: 1350px;
+
+.info {
+  background-color: #242423;
+  height: 1350px;
+  width: 100%;
 }
