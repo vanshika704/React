@@ -206,11 +206,21 @@ hr {
   width: 90%;
   height: 150px;
   display: flex;
+  flex-direction: row;
   align-items: center !important;
   justify-content: center !important;
   transform: translateY(50%);
 }
+.grey-container > div {
+  flex: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.grey-container > div:not(:last-child) {
+  border-right: 1px solid #fff; 
+}
 .info {
   background-color: #242423;
   height: 1350px;
