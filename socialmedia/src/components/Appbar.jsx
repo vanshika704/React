@@ -1,29 +1,23 @@
 
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom'; // If using React Router for navigation
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavLink } from 'react-router-dom';
 
-const AppBar = () => {
-  return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand as={Link} to="/">Your Logo or Brand</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link as={Link} to="/">Home</Nav.Link>
-          <Nav.Link as={Link} to="/features">Features</Nav.Link>
-          <Nav.Link as={Link} to="/pricing">Pricing</Nav.Link>
-          <Nav.Link as={Link} to="/faqs">FAQs</Nav.Link>
-          <Nav.Link as={Link} to="/about">About</Nav.Link>
-        </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-success">Search</Button>
-        </Form>
-        <Button variant="outline-primary" className="ml-2">Login</Button>
-      </Navbar.Collapse>
-    </Navbar>
-  );
+const TabBar = () => {
+    return (
+        <div className="tab-bar d-flex justify-content-between align-items-center bg-light p-3">
+            <div className="tab-links">
+                <NavLink exact to="/" className="tab-link" activeClassName="active">Home</NavLink>
+                <NavLink to="/features" className="tab-link ml-3" activeClassName="active">Features</NavLink>
+                <NavLink to="/pricing" className="tab-link ml-3" activeClassName="active">Pricing</NavLink>
+                <NavLink to="/faqs" className="tab-link ml-3" activeClassName="active">FAQs</NavLink>
+                <NavLink to="/about" className="tab-link ml-3" activeClassName="active">About</NavLink>
+            </div>
+            <div className="search-bar d-flex align-items-center ml-auto">
+                <input type="text" className="form-control mr-2" placeholder="Search..." />
+                <button type="button" className="btn btn-primary mr-2">Search</button>
+                <button type="button" className="btn btn-outline-primary">Login</button>
+            </div>
+        </div>
+    );
 }
 
-export default AppBar;
+export default TabBar;
