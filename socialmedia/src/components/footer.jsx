@@ -1,7 +1,6 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import './index.css';  // Import the custom CSS file
+import '../index.css'; 
 
 const Footer = () => {
     return (
@@ -11,13 +10,13 @@ const Footer = () => {
                 <span className="company-name text-white">Company Name</span>
             </div>
             <div className="social-icons">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white mr-3">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white mr-5">
                     <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white mr-3">
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white mr-5">
                     <i className="fab fa-twitter"></i>
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white mr-3">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white mr-5">
                     <i className="fab fa-instagram"></i>
                 </a>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white">
