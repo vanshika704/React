@@ -1,0 +1,23 @@
+ @import "bootstrap/dist/css/bootstrap.min.css";
+ .tab-bar {
+    background-color: black;
+}
+
+.tab-link {
+    color: white;
+    text-decoration: none;
+}
+
+.tab-link.active {
+    color: grey;
+}
+
+.btn-warning {
+    background-color: rgb(247, 204, 64);
+    border-color: rgb(247, 204, 64);
+}
+
+.btn-warning:hover {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+}
