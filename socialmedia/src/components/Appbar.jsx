@@ -17,9 +17,10 @@ const TabBar = () => {
                 <NavLink to="/about" className="tab-link" activeClassName="active">About</NavLink>
             </div>
             <div className="search-bar d-flex align-items-center ml-auto">
+               
+                <input type="text" className="form-control mr-2" />
+                <button type="button" className="btn btn-outline-warning">Login</button>
                 <button type="button" className="btn btn-warning mr-2">Signup</button>
-                <input type="text" className="form-control mr-2" placeholder="Search..." />
-                <button type="button" className="btn btn-outline-primary">Login</button>
             </div>
         </div>
     );

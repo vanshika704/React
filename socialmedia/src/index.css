@@ -1,6 +1,11 @@
  @import "bootstrap/dist/css/bootstrap.min.css";
+ body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif
+ }
  .tab-bar {
     background-color: black;
+    font-family: 'Poppins', sans-serif
 }
 
 .tab-link {
@@ -21,3 +26,25 @@
     background-color: #ffcc00;
     border-color: #ffcc00;
 }
+.footer {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.company-info .company-name {
+    font-size: 1.2rem;
+}
+
+.logo {
+    height: 40px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: grey;
+}
+
