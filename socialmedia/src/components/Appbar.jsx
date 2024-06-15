@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 const TabBar = () => {
     return (
         <div className="tab-bar d-flex justify-content-between align-items-center bg-light p-3">
