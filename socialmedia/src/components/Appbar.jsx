@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import '../index.css';  // Import the custom CSS file
+import '../index.css';
 
 const TabBar = () => {
     return (
