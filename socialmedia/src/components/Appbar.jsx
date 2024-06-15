@@ -1,11 +1,14 @@
 import { NavLink } from 'react-router-dom';
 
 import '../index.css';
+import Sidebar from './sidebar';
 
 const TabBar = () => {
     return (
         <div className="tab-bar d-flex justify-content-between align-items-center bg-dark p-3">
+            
             <div className="tab-links">
+            <Sidebar/>
                 <NavLink exact to="/" className="tab-link" activeClassName="active">Home</NavLink>
                 &nbsp;&nbsp;&nbsp;
                 <NavLink to="/features" className="tab-link" activeClassName="active">Features</NavLink>

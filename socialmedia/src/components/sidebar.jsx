@@ -7,6 +7,7 @@ import {
     useDisclosure,
     Button,
   } from '@chakra-ui/react';
+import { FaList } from 'react-icons/fa';
   
   function Sidebar() {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -21,16 +22,16 @@ import {
           _hover={{ backgroundColor: 'gray.800' }} 
           _active={{ backgroundColor: 'gray.900' }} 
         >
-          Open
+       <FaList/>
         </Button>
         <Drawer 
           placement={placement} 
           onClose={onClose} 
           isOpen={isOpen}
-          size="xs" // Set the size of the drawer (optional)
+          size="xs" 
         >
           <DrawerOverlay />
-          <DrawerContent bg="gray.800" color="white"> {/* Dark theme background and text color */}
+          <DrawerContent bg="gray.800" color="white">
             <DrawerHeader borderBottomWidth='1px'>Basic Drawer</DrawerHeader>
             <DrawerBody>
               <p>Some contents...</p>
