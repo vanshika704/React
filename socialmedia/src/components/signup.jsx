@@ -47,7 +47,7 @@ function Signup() {
         onClose={onClose}
       >
         <DrawerOverlay />
-        <DrawerContent bg='gray.800' color='white'> {/* Set background color to gray.800 and text color to white */}
+        <DrawerContent bg='gray.800' color='white'> 
           <DrawerCloseButton />
           <DrawerHeader borderBottomWidth='1px'>
             Create a new account
