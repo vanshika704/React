@@ -6,8 +6,12 @@ import {
     DrawerContent,
     useDisclosure,
     Button,
+    List,
+    ListItem,
+    ListIcon,
   } from '@chakra-ui/react';
-import { FaList } from 'react-icons/fa';
+  import { FaList } from 'react-icons/fa';
+  import { MdCreate, MdViewList, MdExplore, MdAccountCircle } from 'react-icons/md'; // Icons for list items
   
   function Sidebar() {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -22,7 +26,7 @@ import { FaList } from 'react-icons/fa';
           _hover={{ backgroundColor: 'gray.800' }} 
           _active={{ backgroundColor: 'gray.900' }} 
         >
-       <FaList/>
+          <FaList />
         </Button>
         <Drawer 
           placement={placement} 
@@ -32,11 +36,26 @@ import { FaList } from 'react-icons/fa';
         >
           <DrawerOverlay />
           <DrawerContent bg="gray.800" color="white">
-            <DrawerHeader borderBottomWidth='1px'>Basic Drawer</DrawerHeader>
+            <DrawerHeader borderBottomWidth='1px'>Hey User!</DrawerHeader>
             <DrawerBody>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
+              <List spacing={3}>
+                <ListItem>
+                  <ListIcon as={MdCreate} color="white" />
+                  Create Post
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={MdViewList} color="white" />
+                  View Posts
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={MdExplore} color="white" />
+                  Explore
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={MdAccountCircle} color="white" />
+                  Profile
+                </ListItem>
+              </List>
             </DrawerBody>
           </DrawerContent>
         </Drawer>
