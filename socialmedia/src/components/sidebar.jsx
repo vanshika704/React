@@ -13,16 +13,15 @@ import {
 } from '@chakra-ui/react';
 import { FaList } from 'react-icons/fa';
 import { MdCreate, MdViewList, MdExplore, MdAccountCircle } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 
 function Sidebar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const placement = 'left';
+  const navigate = useNavigate();
 
-  const handleItemClick = (item) => {
-    // Define what happens when each item is clicked
-    console.log(`Clicked ${item}`);
-    onClose(); // Optionally close the drawer when an item is clicked
-    
+  const handleItemClick = (path) => {
+    navigate(path);
+    onClose();
   };
 
   return (
@@ -37,7 +36,7 @@ function Sidebar() {
         <FaList />
       </Button>
       <Drawer 
-        placement={placement} 
+        placement="left" 
         onClose={onClose} 
         isOpen={isOpen}
         size="xs" 
@@ -49,7 +48,7 @@ function Sidebar() {
             <List spacing={3}>
               <ListItem>
                 <Button
-                  onClick={() => handleItemClick('Create Post')}
+                  onClick={() => handleItemClick('/Addpost')}
                   variant="ghost"
                   width="100%"
                   justifyContent="flex-start"
@@ -62,7 +61,7 @@ function Sidebar() {
               </ListItem>
               <ListItem>
                 <Button
-                  onClick={() => handleItemClick('View Posts')}
+                  onClick={() => handleItemClick('/')}
                   variant="ghost"
                   width="100%"
                   justifyContent="flex-start"
@@ -75,7 +74,7 @@ function Sidebar() {
               </ListItem>
               <ListItem>
                 <Button
-                  onClick={() => handleItemClick('Explore')}
+                  onClick={() => handleItemClick('/explore')}
                   variant="ghost"
                   width="100%"
                   justifyContent="flex-start"
@@ -88,7 +87,7 @@ function Sidebar() {
               </ListItem>
               <ListItem>
                 <Button
-                  onClick={() => handleItemClick('Profile')}
+                  onClick={() => handleItemClick('/profile')}
                   variant="ghost"
                   width="100%"
                   justifyContent="flex-start"
@@ -99,6 +98,7 @@ function Sidebar() {
                   Profile
                 </Button>
               </ListItem>
+              {/* Add more ListItems for additional menu items */}
             </List>
           </DrawerBody>
         </DrawerContent>
