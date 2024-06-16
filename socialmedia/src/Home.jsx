@@ -1,4 +1,3 @@
-
 import TabBar from './components/Appbar'; 
 import Footer from './components/footer';
 
@@ -9,7 +8,7 @@ function Home() {
       <div className="content flex-grow-1">
         <div className="container mt-3">
           <div className='bodyhome'>
-          
+            {/* Your content here */}
           </div>
         </div>
       </div>
