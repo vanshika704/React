@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../index.css';
 import Sidebar from './sidebar';
 import Signup from './signup';
+import Login from './login';
 const TabBar = () => {
     return (
         <div className="tab-bar d-flex justify-content-between align-items-center bg-dark p-3">
@@ -22,7 +23,7 @@ const TabBar = () => {
             <div className="search-bar d-flex align-items-center ml-auto">
                
                 <input type="text" className="form-control mr-2" />
-                <button type="button" className="btn btn-outline-warning">Login</button>
+                <Login/>
                 <Signup/>
             </div>
         </div>

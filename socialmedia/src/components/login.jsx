@@ -17,9 +17,9 @@ import {
   FormHelperText,
 } from '@chakra-ui/react';
 import { useDisclosure } from '@chakra-ui/react'; // Import useDisclosure from Chakra UI
-import {FaGoogle, FaPlus } from 'react-icons/fa'; // Import FaPlus icon for Signup and FaGoogle icon for Google login
+import {FaGoogle, } from 'react-icons/fa'; // Import FaPlus icon for Signup and FaGoogle icon for Google login
 
-function Signup() {
+function Login() {
   const { isOpen, onOpen, onClose } = useDisclosure(); // Initialize useDisclosure
   const [name, setName] = useState('');
   const [userId, setUserId] = useState('');
@@ -50,14 +50,14 @@ function Signup() {
   return (
     <>
       <Button
-        leftIcon={<FaPlus/>}
+        
         fontSize="sm"
         colorScheme="green" 
         variant="filled"
         onClick={onOpen}
          color="white" 
       >
-        Signup
+       Login
       </Button>
       <Drawer
         isOpen={isOpen}
@@ -69,7 +69,7 @@ function Signup() {
         <DrawerContent bg="gray.800" color="white">
           <DrawerCloseButton />
           <DrawerHeader borderBottomWidth="1px">
-            Create a new account
+        Login 
           </DrawerHeader>
 
           <DrawerBody>
@@ -153,4 +153,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default Login ;
