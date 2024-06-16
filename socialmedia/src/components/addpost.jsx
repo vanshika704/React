@@ -7,43 +7,65 @@ function AddPost() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Example: Here you can implement logic to send data to your backend
-    // For demonstration purposes, let's just log the data
     console.log({ title, body });
-    // Clear form fields after submission
     setTitle('');
     setBody('');
   };
 
   return (
-    <Box maxWidth="500px" mx="auto" mt="10" p="6" borderWidth="1px" borderRadius="lg">
-      <form onSubmit={handleSubmit}>
-        <Stack spacing={4}>
-          <FormControl id="post-title">
-            <FormLabel>Title</FormLabel>
-            <Input
-              type="text"
-              placeholder="Enter post title"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-            />
-          </FormControl>
-          
-          <FormControl id="post-body">
-            <FormLabel>Body</FormLabel>
-            <Textarea
-              placeholder="Enter post content"
-              value={body}
-              onChange={(e) => setBody(e.target.value)}
-              rows={6}
-            />
-          </FormControl>
+    <Box
+      width="100vw"
+      height="100vh"
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+      backgroundColor="black"
+      p="6"
+    >
+      <Box
+        width="100%"
+        maxWidth="900px"
+        maxHeight="900px"
+        p="6"
+        borderWidth="5px"
+        borderRadius="lg"
+        backgroundColor="black"
+        color="white"
+      >
+        <form onSubmit={handleSubmit}>
+          <Stack spacing={4}>
+            <FormControl id="post-title">
+              <FormLabel>Title</FormLabel>
+              <Input
+                type="text"
+                placeholder="Enter post title"
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+                color="white"
+                borderColor="white"
+                _placeholder={{ color: 'gray.500' }}
+              />
+            </FormControl>
 
-          <Button colorScheme="teal" type="submit">
-            Add Post
-          </Button>
-        </Stack>
-      </form>
+            <FormControl id="post-body">
+              <FormLabel>Body</FormLabel>
+              <Textarea
+                placeholder="Enter post content"
+                value={body}
+                onChange={(e) => setBody(e.target.value)}
+                rows={6}
+                color="white"
+                borderColor="white"
+                _placeholder={{ color: 'gray.500' }}
+              />
+            </FormControl>
+
+            <Button colorScheme="teal" type="submit">
+              Add Post
+            </Button>
+          </Stack>
+        </form>
+      </Box>
     </Box>
   );
 }
