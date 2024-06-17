@@ -110,5 +110,11 @@
  font-weight: bold;
  margin-top: 80px;
  margin-left: 350px;
- 
+ color: black;
+
+}
+.text2{
+  font-size: 20px;
+  margin-left: 350px;
+  color: rgb(73, 72, 72);
 }
