@@ -1,11 +1,54 @@
-
 @import 'bootstrap/dist/css/bootstrap.min.css';
-.Home{
+
+.Home {
   background-color: rgb(27, 27, 27);
   height: 640px;
   width: 1360px;
+  border-bottom-right-radius: 300px; 
 }
 
+.Appbarcontainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
 
+.signin {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
 
+.signin button {
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px;
+  height: 30px; 
+}
 
+.btn-transparent {
+  background-color: transparent;
+  color: rgb(250, 249, 249); 
+  
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.btn-image {
+  background-color: transparent;
+  padding: 0; 
+  border: none; 
+  height: 30px; /* Ensures button height is 30px */
+}
+
+.btn-image-logo {
+  width: auto; /* Maintain aspect ratio */
+  height: 100%; /* Makes sure the image fits the button height */
+}
