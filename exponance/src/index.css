@@ -65,7 +65,7 @@
   }
 
   .Startnow {
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff; 
     color: black; 
     border: none;
     padding: 10px 20px;
@@ -74,9 +74,41 @@
     margin-top: 20px;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
-    margin-left: 150px;
+    margin-left: 40px;
   }
   
   .Startnow:hover {
-    background-color: #cccccc; /* Light gray on hover */
+    background-color: #cccccc; 
   }
+  .imageandtext{
+    display: flex;
+  }
+ 
+  .image-stack{
+    margin-left: 150px;
+    position: relative;
+    gap: 10;
+  }
+  .image1{
+  position: relative;
+  margin-top: 100px;
+ } 
+ .image2{
+  position: absolute;
+  margin-top: 0px;
+ 
+  margin-left: -5px; 
+ } 
+ .Resources {
+  background-color: rgb(253, 251, 251);
+  height: 640px;
+  width: 1360px;
+
+}
+.Resourcesand{
+  font-size: 50px;
+ font-weight: bold;
+ margin-top: 80px;
+ margin-left: 350px;
+ 
+}
