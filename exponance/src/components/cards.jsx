@@ -21,7 +21,7 @@ function Cards() {
               width={100}
               height={100}
             />
-            <Stack mt='4' spacing='3'>
+            <Stack mt='4' spacing='4'>
               <Heading size='md' color={'white'}>Mini Shops</Heading>
               <Text fontSize='13px' color={'white'}>
                 With Exponance&apos;s finance management software for showrooms and small stores, you can automate your financial processes. Take advantage of staff management, billing systems, inventory support, and thorough tracking of expenditures, bills, leases, and borrowing information. Financial operations can be optimized to unlock growth potential.
@@ -41,7 +41,7 @@ function Cards() {
               width={100}
               height={100}
             />
-            <Stack mt='4' spacing='3'>
+            <Stack mt='4' spacing='4'>
               <Heading size='md' color={'white'}>Micro Shops</Heading>
               <Text fontSize='13px' color={'white'}>
               Exponance provides a user-friendly finance management tool designed specifically for small businesses. Inventory management, billing, employee management, and expense tracking can streamline your operations. Improve productivity and simplify your finances for small businesses
@@ -61,7 +61,7 @@ function Cards() {
               width={100}
               height={100}
             />
-            <Stack mt='4' spacing='3'>
+            <Stack mt='4' spacing='4'>
               <Heading size='md' color={'white'}>Fitness Sector</Heading>
               <Text fontSize='13px' color={'white'}>
               With Exponance, you can effortlessly manage your gym&apos;s finances. Our cloud-based platform offers staff management, inventory support, membership management, late payment management, advance payment management, overdue payment management, and full billing and monitoring features. To increase productivity, automate the financial operations of your gym.
@@ -81,7 +81,7 @@ function Cards() {
               width={100}
               height={100}
             />
-            <Stack mt='2' spacing='3'>
+            <Stack mt='2' spacing='4'>
               <Heading size='md' color={'white'}>Restaurants</Heading>
               <Text fontSize='13px' color={'white'}>
               Utilise Exponance to improve the financial administration of your restaurants. Our platform provides staff administration, inventory support for food and other items, urgent requirements, customer monitoring advance payments, and expiration tracking. For a seamless dining experience, streamline bills, rent management, and borrowing information.
