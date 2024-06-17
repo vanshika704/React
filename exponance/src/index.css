@@ -45,10 +45,18 @@
   background-color: transparent;
   padding: 0; 
   border: none; 
-  height: 30px; /* Ensures button height is 30px */
+  height: 30px; 
 }
 
 .btn-image-logo {
-  width: auto; /* Maintain aspect ratio */
-  height: 100%; /* Makes sure the image fits the button height */
+  width: auto;
+  height: 100%; 
 }
+
+  .mainpagetext {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white; 
+  }
