@@ -4,6 +4,7 @@ import Home from './Home';
 import AddPost from './components/addpost';
 
 import './index.css'; 
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Addpost" element={<AddPost />} />
+          <Route path="/Profile" element={<Profile/>}/>
         </Routes>
       </div>
     </BrowserRouter>

@@ -87,7 +87,7 @@ function Sidebar() {
               </ListItem>
               <ListItem>
                 <Button
-                  onClick={() => handleItemClick('/profile')}
+                  onClick={() => handleItemClick('/Profile')}
                   variant="ghost"
                   width="100%"
                   justifyContent="flex-start"
