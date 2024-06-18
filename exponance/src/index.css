@@ -12,6 +12,13 @@
   display: flex;
   align-items: center;
   padding: 10px;
+  overflow-y: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+.Appbarcontainer::-webkit-scrollbar {
+  display: none; 
 }
 
 .signin {
