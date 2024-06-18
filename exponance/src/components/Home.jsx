@@ -3,6 +3,7 @@ import '../index.css';
 
 import Appbar from './Appbar';
 import Page3 from './page3';
+import Page4 from './page4';
 import Resources from './resources';
 
 function Home() {
@@ -29,6 +30,7 @@ function Home() {
     </div>
     <Resources/>
     <Page3/>
+    <Page4/>
     </>
   );
 }
