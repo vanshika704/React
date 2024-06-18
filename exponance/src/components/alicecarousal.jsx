@@ -55,7 +55,7 @@ function Cards() {
         >
           {items.map((item, index) => (
             <div key={index} className="Cards">
-              <Card maxW='sm' width="calc(100% - 80px)" height="calc(100% - 30px)" backgroundColor='blackAlpha.800'>
+              <Card maxW='sm' width="100%" height="100%" backgroundColor='blackAlpha.800'>
                 <CardBody>
                   <Image
                     src={item.imageSrc}
@@ -66,7 +66,7 @@ function Cards() {
                   />
                   <Stack mt='4' spacing='4'>
                     <Heading size='md' color={'white'}>{item.title}</Heading>
-                    <Text fontSize='13px' color={'white'}>
+                    <Text fontSize='15px' color={'white'}>
                       {item.description}
                     </Text>
                   </Stack>
