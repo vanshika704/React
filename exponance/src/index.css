@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  overflow-y: auto;
+  overflow-x: auto;
   white-space: nowrap;
   -ms-overflow-style: none; 
   scrollbar-width: none;
@@ -131,6 +131,25 @@
   color: rgb(73, 72, 72);
 }
 
+.text3 {
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: white; 
+  margin: 100px 0 0 120px;
+  text-align: left;
+  margin-top: 150px;
+}
+.text4{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  
+  color: white; 
+  margin: 100px 0 0 600px;
+
+  margin-top: 30px;
+}
+
 .cards {
   display: flex;
   gap: 1px;
@@ -184,6 +203,10 @@
   .image3 {
     margin-left: 10%;
   }
+
+  .text3 {
+    color: black;
+  }
 }
 
 @media (max-width: 768px) {
@@ -223,6 +246,10 @@
 
   .image3 {
     margin-left: 5%;
+  }
+
+  .text3 {
+    color: black;
   }
 }
 
@@ -264,5 +291,9 @@
 
   .image3 {
     margin-left: 5%;
+  }
+
+  .text3 {
+    color: black;
   }
 }
