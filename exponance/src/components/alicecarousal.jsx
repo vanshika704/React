@@ -41,7 +41,7 @@ function Cards() {
       <ChakraProvider theme={theme}>
         <AliceCarousel
           autoPlay
-          autoPlayInterval={1000}
+          autoPlayInterval={2000}
           mouseTracking
           disableDotsControls
           infinite
