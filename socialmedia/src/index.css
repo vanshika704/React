@@ -71,10 +71,10 @@ button {
 
 .Profile {
   background-color: rgb(15, 15, 15);
-  height: 710px;
+  
   width: 1350px;
   font-family: 'Poppins', sans-serif;
-  margin: 0 auto; /* Center align Profile container */
+  margin: 0 auto;
 }
 
 .custom-navbar {
@@ -134,12 +134,12 @@ button {
   color: white;
   border-collapse: collapse;
   width: 100%;
-  font-size: 30px; /* Set font size to 30px */
+  font-size: 30px;
 }
 
 .table-dark th, .table-dark td {
   border: 0px solid white;
-  padding: 8px; /* Adjusted padding for better spacing */
+  padding: 8px; 
   text-align: left;
 }
 
