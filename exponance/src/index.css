@@ -126,3 +126,9 @@ height: 400px;
 margin-top: 30px;
 
 }
+.Page3{
+  background-color: rgb(27, 27, 27);
+  height: 640px;
+  width: 1360px;
+  border-bottom-left-radius: 300px; 
+}
