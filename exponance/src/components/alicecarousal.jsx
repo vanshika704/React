@@ -1,7 +1,7 @@
 import { Card, CardBody, Image, Stack, Heading, Text } from '@chakra-ui/react';
 import { extendTheme, ChakraProvider } from '@chakra-ui/react';
 import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css'; // Import the CSS for styling
+import 'react-alice-carousel/lib/alice-carousel.css'; 
 
 const theme = extendTheme({
   fonts: {
