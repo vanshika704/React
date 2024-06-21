@@ -3,6 +3,10 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import MainPage from './Page2';
+import Menu from './Menu';
+import Partners from './partners';
+import Explore from './explore';
+
 
 function App() {
   return (
@@ -10,6 +14,9 @@ function App() {
       <Routes>
         <Route path="/Page2" element={<MainPage />} />
         <Route path="/" element={<Home />} />
+        <Route path ="/menu" element={<Menu/>} />
+        <Route path="/partners" element={<Partners/>}/>
+        <Route path="/explore" element={<Explore/>}/>
       </Routes>
     </Router>
   );
