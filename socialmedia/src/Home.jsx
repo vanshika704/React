@@ -71,7 +71,7 @@ function Posts() {
                   <Avatar name={userData.username} src={userData.profileImage} />
                   <Box>
                     <Heading size='sm'>{userData.username}</Heading>
-                    <Text>{userData.description}</Text>
+                    
                   </Box>
                 </Flex>
                 <IconButton
