@@ -1,6 +1,9 @@
+
 import AppBar from './appbar';
 import "./index.css";
-
+import { FaRegClock } from "react-icons/fa";
+import { MdDinnerDining } from "react-icons/md";
+import { MdRestaurantMenu } from "react-icons/md";
 function MainPage() {
   return (
     <div>
@@ -27,13 +30,16 @@ function Food1() {
       </div> 
       <div className="grey-container">
         <div>
-          <p>This is the first part</p>
+          <div><FaRegClock size={30}/></div><div className="spacer"></div>
+          <div>Work Hours</div>
         </div>
         <div>
-          <p>This is the second part</p>
+          <div><MdDinnerDining size={30}/></div><div className="spacer"></div>
+          <div>Book Table</div>
         </div>
         <div>
-          <p>This is the third part</p>
+          <div><MdRestaurantMenu size={30} /></div><div className="spacer"></div>
+       <div>See Menu</div>
         </div>
       </div>
     </div>
