@@ -275,3 +275,23 @@ hr {
   margin-left: 20px;
   display: block;
 }
+.gallery-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.alice-carousel {
+  height: 100%;
+}
+
+.alice-carousel__wrapper {
+  height: 100%;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
