@@ -16,11 +16,11 @@ import {
   FormErrorMessage,
   FormHelperText,
 } from '@chakra-ui/react';
-import { useDisclosure } from '@chakra-ui/react'; // Import useDisclosure from Chakra UI
-import {FaGoogle, } from 'react-icons/fa'; // Import FaPlus icon for Signup and FaGoogle icon for Google login
+import { useDisclosure } from '@chakra-ui/react';
+import {FaGoogle, } from 'react-icons/fa'; 
 
 function Login() {
-  const { isOpen, onOpen, onClose } = useDisclosure(); // Initialize useDisclosure
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const [name, setName] = useState('');
   const [userId, setUserId] = useState('');
   const [email, setEmail] = useState('');
