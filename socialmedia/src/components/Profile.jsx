@@ -1,14 +1,14 @@
 import "../index.css";
-import { FaUserPlus, FaLink } from "react-icons/fa";
+import { FaUserPlus, FaLink, FaShareSquare } from "react-icons/fa";
 import { CiSquarePlus } from "react-icons/ci";
 import { CgDetailsMore } from "react-icons/cg";
 import { Avatar, Wrap, WrapItem, Box, AbsoluteCenter, Divider, IconButton, Button, Text, Flex, Heading, Image } from '@chakra-ui/react';
 import { IoMenu } from "react-icons/io5";
 import { BsChatLeftDots } from "react-icons/bs";
+import { GoHeart } from "react-icons/go";
 import { FcLike } from "react-icons/fc";
-import { FaShareSquare } from "react-icons/fa";
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react';
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 const accessKey = 'uJ3pQvlC6jF5UGt_yKG0r2407uHED9NMctW4b-dB8ZU';
 
 function Profile() {
@@ -27,6 +27,7 @@ function Profile() {
           profileImage: item.user.profile_image.medium,
           description: item.alt_description,
           postImage: item.urls.regular,
+          liked: false, // Initialize liked state
         }));
 
         setUserDataList(newDataList);
@@ -37,6 +38,14 @@ function Profile() {
 
     fetchData();
   }, []);
+
+  const toggleLike = (index) => {
+    setUserDataList((prevUserDataList) =>
+      prevUserDataList.map((userData, i) =>
+        i === index ? { ...userData, liked: !userData.liked } : userData
+      )
+    );
+  };
 
   return (
     <div className="Profile">
@@ -141,7 +150,7 @@ function Profile() {
             <Image
               objectFit='cover'
               src={userData.postImage}
-              alt='Chakra UI'
+              alt='Post image'
               height={200}
             />
             <CardFooter
@@ -153,7 +162,12 @@ function Profile() {
                 },
               }}
             >
-              <Button flex='1' variant='ghost' leftIcon={<FcLike />}>
+              <Button
+                flex='1'
+                variant='ghost'
+                leftIcon={userData.liked ? <FcLike /> : <GoHeart />}
+                onClick={() => toggleLike(index)}
+              >
                 Like
               </Button>
               <Button flex='1' variant='ghost' leftIcon={<BsChatLeftDots />}>
