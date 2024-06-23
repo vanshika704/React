@@ -4,7 +4,9 @@ import '../index.css';
 import Sidebar from './sidebar';
 import Signup from './signup';
 import Login from './login';
+
 const TabBar = () => {
+    
     return (
         <div className="tab-bar d-flex justify-content-between align-items-center bg-dark p-3">
             <Wrap>

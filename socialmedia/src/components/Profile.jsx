@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import "../index.css";
 import { FaUserPlus, FaLink } from "react-icons/fa";
 import { CiSquarePlus } from "react-icons/ci";
@@ -5,14 +6,16 @@ import { CgDetailsMore } from "react-icons/cg";
 import { Avatar, Wrap, WrapItem, Box, AbsoluteCenter, Divider, IconButton, Button, Text, Flex, Heading, Image } from '@chakra-ui/react';
 import { IoMenu } from "react-icons/io5";
 import { BsChatLeftDots } from "react-icons/bs";
-import { FcLike } from "react-icons/fc";
+import { IoHeart, IoHeartOutline } from "react-icons/io5";
 import { FaShareSquare } from "react-icons/fa";
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react';
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
+
 const accessKey = 'uJ3pQvlC6jF5UGt_yKG0r2407uHED9NMctW4b-dB8ZU';
 
 function Profile() {
   const [userDataList, setUserDataList] = useState([]);
+  const [likes, setLikes] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,7 +25,8 @@ function Profile() {
         );
         const data = await response.json();
 
-        const newDataList = data.map(item => ({
+        const newDataList = data.map((item, index) => ({
+          id: index,
           username: item.user.username,
           profileImage: item.user.profile_image.medium,
           description: item.alt_description,
@@ -30,6 +34,13 @@ function Profile() {
         }));
 
         setUserDataList(newDataList);
+
+        // Initialize likes state
+        const initialLikes = {};
+        newDataList.forEach((userData) => {
+          initialLikes[userData.id] = false;
+        });
+        setLikes(initialLikes);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -38,15 +49,22 @@ function Profile() {
     fetchData();
   }, []);
 
+  const handleLike = (id) => {
+    setLikes((prevLikes) => ({
+      ...prevLikes,
+      [id]: !prevLikes[id],
+    }));
+  };
+
   return (
     <div className="Profile">
       <nav className="navbar navbar-expand-lg custom-navbar">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <NavLink to="/" activeClassName="active">
             <span className="brand-icon-text">
               <FaUserPlus size={40} /> Sam774
             </span>
-          </a>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -61,19 +79,19 @@ function Profile() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink to="/add" activeClassName="active">
                   <CiSquarePlus size={30} />
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink to="/link" activeClassName="active">
                   <FaLink size={30} />
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink to="/details" activeClassName="active">
                   <CgDetailsMore size={30} />
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -116,8 +134,8 @@ function Profile() {
       </Box>
 
       <Flex flexWrap='wrap' justifyContent='center' mt={4}>
-        {userDataList.map((userData, index) => (
-          <Card key={index} maxW='md' bg='white' m={4}>
+        {userDataList.map((userData) => (
+          <Card key={userData.id} maxW='md' bg='white' m={4}>
             <CardHeader>
               <Flex spacing='4'>
                 <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
@@ -153,7 +171,12 @@ function Profile() {
                 },
               }}
             >
-              <Button flex='1' variant='ghost' leftIcon={<FcLike />}>
+              <Button
+                flex='1'
+                variant='ghost'
+                leftIcon={likes[userData.id] ? <IoHeart /> : <IoHeartOutline />}
+                onClick={() => handleLike(userData.id)}
+              >
                 Like
               </Button>
               <Button flex='1' variant='ghost' leftIcon={<BsChatLeftDots />}>
