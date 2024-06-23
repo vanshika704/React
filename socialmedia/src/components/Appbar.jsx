@@ -16,15 +16,15 @@ const TabBar = () => {
           </Wrap>
             <div className="tab-links">
             <Sidebar/>
-                <NavLink exact to="/" className="tab-link" activeClassName="active">Home</NavLink>
+                <NavLink exact to="/" className="tab-link" >Home</NavLink>
                 &nbsp;&nbsp;&nbsp;
-                <NavLink to="/features" className="tab-link" activeClassName="active">Features</NavLink>
+                <NavLink to="/features" className="tab-link" >Features</NavLink>
                 &nbsp;&nbsp;&nbsp;
-                <NavLink to="/pricing" className="tab-link" activeClassName="active">Pricing</NavLink>
+                <NavLink to="/pricing" className="tab-link" >Pricing</NavLink>
                 &nbsp;&nbsp;&nbsp;
-                <NavLink to="/faqs" className="tab-link" activeClassName="active">FAQs</NavLink>
+                <NavLink to="/faqs" className="tab-link" >FAQs</NavLink>
                 &nbsp;&nbsp;&nbsp;
-                <NavLink to="/about" className="tab-link" activeClassName="active">About</NavLink>
+                <NavLink to="/about" className="tab-link" >About</NavLink>
             </div>
             <div className="search-bar d-flex align-items-center ml-auto">
                
