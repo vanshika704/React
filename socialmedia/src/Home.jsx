@@ -9,6 +9,7 @@ import { FcLike } from "react-icons/fc";
 import { FaShareSquare } from "react-icons/fa";
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react';
 import { useState,useEffect } from 'react';
+import { GoHeart } from 'react-icons/go';
 const accessKey = 'uJ3pQvlC6jF5UGt_yKG0r2407uHED9NMctW4b-dB8ZU';
 function Home() {
   return (
@@ -55,7 +56,13 @@ function Posts() {
 
     fetchData();
   }, []);
-
+  const toggleLike = (index) => {
+    setUserDataList((prevUserDataList) =>
+      prevUserDataList.map((userData, i) =>
+        i === index ? { ...userData, liked: !userData.liked } : userData
+      )
+    );
+  };
   return (
    <div>
       
@@ -100,7 +107,8 @@ function Posts() {
                 },
               }}
             >
-              <Button flex='1' variant='ghost' leftIcon={<FcLike />}>
+              <Button flex='1' variant='ghost' leftIcon={userData.liked ?<FcLike /> : <GoHeart/>} onClick={() => toggleLike(index)}>
+
                 Like
               </Button>
               <Button flex='1' variant='ghost' leftIcon={<BsChatLeftDots />}>
