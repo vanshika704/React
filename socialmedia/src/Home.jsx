@@ -1,7 +1,5 @@
 import TabBar from './components/Appbar'; 
 import Footer from './components/footer';
-
-
 import { Avatar,  Box,  IconButton, Button, Text, Flex, Heading, Image } from '@chakra-ui/react';
 import { IoMenu } from "react-icons/io5";
 import { BsChatLeftDots } from "react-icons/bs";
