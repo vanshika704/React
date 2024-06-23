@@ -30,7 +30,7 @@ function Login() {
   const firstField = React.useRef();
 
   const handleGoogleLogin = () => {
-    // Implement Google login functionality here
+   
     console.log('Logging in with Google...');
   };
 
