@@ -62,6 +62,7 @@ function Info() {
         templateRows="repeat(2, 1fr)"
         templateColumns="repeat(4, 1fr)"
         gap={4}
+        marginLeft={50}
       >
         <GridItem className="grid-item" rowSpan={2} colSpan={2}>
           <div className="image-box">
