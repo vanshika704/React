@@ -1,10 +1,10 @@
 import AppBar from './appbar';
 import "./index.css";
-import { FaSearch } from "react-icons/fa";
-import { FaPeopleArrows } from "react-icons/fa";
+import { FaSearch, FaPeopleArrows } from "react-icons/fa";
 import { MdRestaurantMenu } from "react-icons/md";
 import Gallery from './backgroundcarousal';
-import { Grid, GridItem } from '@chakra-ui/react'
+import { Grid, GridItem,  } from '@chakra-ui/react';
+
 function MainPage() {
   return (
     <div>
@@ -23,8 +23,7 @@ export default MainPage;
 function Food1() {
   return (
     <div className="image-container">
-      {/* <img src="src/assets/food3.jpg" className='imagemain' alt="Food" /> */}
-      <Gallery/>
+      <Gallery />
       <div className="text-overlay">
         <h1>Life is Too Short For<br /> Boring food</h1>
         <h6>Eat Something Great Everyday In Your Budget</h6>
@@ -58,19 +57,29 @@ function Greycontainer() {
 function Info() {
   return (
     <div className='info'>
-     
       <Grid
-  h='500px'
-    w="100%"
-  templateRows='repeat(2, 1fr)'
-  templateColumns='repeat(5, 1fr)'
-  gap={4}
->
-  <GridItem rowSpan={2} colSpan={1} bg='tomato'></GridItem>
-  <GridItem colSpan={2} bg='papayawhip' ></GridItem>
-  <GridItem colSpan={2} bg='papayawhip'></GridItem>
-  <GridItem colSpan={4} bg='tomato' ></GridItem>
-</Grid>
+          h="400px"
+          templateRows="repeat(2, 1fr)"
+          templateColumns="repeat(4, 1fr)"
+          gap={4}
+        >
+          <GridItem borderRadius="20px" rowSpan={2} colSpan={2} bg="tomato">
+            <img src='src/assets/food7.jpg' alt='starters' className='grid-image' />
+         
+          </GridItem>
+          <GridItem borderRadius="20px" colSpan={1} rowSpan={1} bg="papayawhip">
+            <img src='src/assets/c4.webp' alt='  main course' className='grid-image' />
+          
+          </GridItem>
+          <GridItem borderRadius="20px" colSpan={1} rowSpan={1} bg="papayawhip">
+            <img src='src/assets/food6.jpg' alt='Desserts' className='grid-image' />
+          </GridItem>
+          <GridItem borderRadius="20px" colSpan={2} rowSpan={1} bg="papayawhip">
+            <img src='src/assets/whitney-wright-TgQkxQc-t_U-unsplash.jpg' alt='Family Room' className='grid-image' />
+          </GridItem>
+          
+        </Grid>
+      
     </div>
   );
 }
