@@ -73,7 +73,7 @@ function Info() {
           <img src='src/assets/food6.jpg' alt='Desserts' className='grid-image' />
         </GridItem>
         <GridItem borderRadius="20px" colSpan={2} rowSpan={1} bg="papayawhip">
-          <img src='src/assets/kobby-mendez-xBFTjrMIC0c-unsplash.jpg' alt='Family Room' className='grid-image' />
+          <img src='src/assets/kobby-mendez-xBFTjrMIC0c-unsplash.jpg' alt='Drinks' className='grid-image' />
         </GridItem>
       </Grid>
     </div>
