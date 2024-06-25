@@ -4,7 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import { FaPeopleArrows } from "react-icons/fa";
 import { MdRestaurantMenu } from "react-icons/md";
 import Gallery from './backgroundcarousal';
-
+import { Grid, GridItem } from '@chakra-ui/react'
 function MainPage() {
   return (
     <div>
@@ -58,9 +58,19 @@ function Greycontainer() {
 function Info() {
   return (
     <div className='info'>
-      <div className='Leftdata'>
-        <img src='src/assets/food8.avif' height={500} width={500} className='image2' alt="Food" />
-      </div>
+     
+      <Grid
+  h='500px'
+    w="100%"
+  templateRows='repeat(2, 1fr)'
+  templateColumns='repeat(5, 1fr)'
+  gap={4}
+>
+  <GridItem rowSpan={2} colSpan={1} bg='tomato' />
+  <GridItem colSpan={2} bg='papayawhip' />
+  <GridItem colSpan={2} bg='papayawhip' />
+  <GridItem colSpan={4} bg='tomato' />
+</Grid>
     </div>
   );
 }
