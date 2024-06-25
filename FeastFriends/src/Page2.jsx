@@ -63,17 +63,29 @@ function Info() {
         templateColumns="repeat(4, 1fr)"
         gap={4}
       >
-        <GridItem borderRadius="20px" rowSpan={2} colSpan={2} bg="tomato">
-          <img src='src/assets/c1.jpg' alt='starters' className='grid-image1' />
+        <GridItem className="grid-item" rowSpan={2} colSpan={2}>
+          <div className="image-box">
+            <img src='src/assets/c1.jpg' alt='starters' className='grid-image1' />
+            <div className="overlay-text1">Starters</div>
+          </div>
         </GridItem>
-        <GridItem borderRadius="20px" colSpan={1} rowSpan={1} bg="papayawhip">
-          <img src='src/assets/c4.webp' alt='main course' className='grid-image' />
+        <GridItem className="grid-item" colSpan={1} rowSpan={1}>
+          <div className="image-box">
+            <img src='src/assets/c4.webp' alt='main course' className='grid-image' />
+            <div className="overlay-text1">Main Course</div>
+          </div>
         </GridItem>
-        <GridItem borderRadius="20px" colSpan={1} rowSpan={1} bg="papayawhip">
-          <img src='src/assets/food6.jpg' alt='Desserts' className='grid-image' />
+        <GridItem className="grid-item" colSpan={1} rowSpan={1}>
+          <div className="image-box">
+            <img src='src/assets/food6.jpg' alt='Desserts' className='grid-image' />
+            <div className="overlay-text1">Desserts</div>
+          </div>
         </GridItem>
-        <GridItem borderRadius="20px" colSpan={2} rowSpan={1} bg="papayawhip">
-          <img src='src/assets/kobby-mendez-xBFTjrMIC0c-unsplash.jpg' alt='Drinks' className='grid-image' />
+        <GridItem className="grid-item" colSpan={2} rowSpan={1}>
+          <div className="image-box">
+            <img src='src/assets/kobby-mendez-xBFTjrMIC0c-unsplash.jpg' alt='Drinks' className='grid-image' />
+            <div className="overlay-text1">Drinks</div>
+          </div>
         </GridItem>
       </Grid>
     </div>
