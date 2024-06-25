@@ -3,7 +3,7 @@ import "./index.css";
 import { FaSearch, FaPeopleArrows } from "react-icons/fa";
 import { MdRestaurantMenu } from "react-icons/md";
 import Gallery from './backgroundcarousal';
-import { Grid, GridItem,  } from '@chakra-ui/react';
+import { Grid, GridItem } from '@chakra-ui/react';
 
 function MainPage() {
   return (
@@ -58,28 +58,24 @@ function Info() {
   return (
     <div className='info'>
       <Grid
-          h="400px"
-          templateRows="repeat(2, 1fr)"
-          templateColumns="repeat(4, 1fr)"
-          gap={4}
-        >
-          <GridItem borderRadius="20px" rowSpan={2} colSpan={2} bg="tomato">
-            <img src='src/assets/food7.jpg' alt='starters' className='grid-image' />
-         
-          </GridItem>
-          <GridItem borderRadius="20px" colSpan={1} rowSpan={1} bg="papayawhip">
-            <img src='src/assets/c4.webp' alt='  main course' className='grid-image' />
-          
-          </GridItem>
-          <GridItem borderRadius="20px" colSpan={1} rowSpan={1} bg="papayawhip">
-            <img src='src/assets/food6.jpg' alt='Desserts' className='grid-image' />
-          </GridItem>
-          <GridItem borderRadius="20px" colSpan={2} rowSpan={1} bg="papayawhip">
-            <img src='src/assets/whitney-wright-TgQkxQc-t_U-unsplash.jpg' alt='Family Room' className='grid-image' />
-          </GridItem>
-          
-        </Grid>
-      
+        h="400px"
+        templateRows="repeat(2, 1fr)"
+        templateColumns="repeat(4, 1fr)"
+        gap={4}
+      >
+        <GridItem borderRadius="20px" rowSpan={2} colSpan={2} bg="tomato">
+          <img src='src/assets/c1.jpg' alt='starters' className='grid-image1' />
+        </GridItem>
+        <GridItem borderRadius="20px" colSpan={1} rowSpan={1} bg="papayawhip">
+          <img src='src/assets/c4.webp' alt='main course' className='grid-image' />
+        </GridItem>
+        <GridItem borderRadius="20px" colSpan={1} rowSpan={1} bg="papayawhip">
+          <img src='src/assets/food6.jpg' alt='Desserts' className='grid-image' />
+        </GridItem>
+        <GridItem borderRadius="20px" colSpan={2} rowSpan={1} bg="papayawhip">
+          <img src='src/assets/kobby-mendez-xBFTjrMIC0c-unsplash.jpg' alt='Family Room' className='grid-image' />
+        </GridItem>
+      </Grid>
     </div>
   );
 }
