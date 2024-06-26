@@ -2,10 +2,10 @@
 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-import MainPage from './Page2';
-import Menu from './Menu';
-import Partners from './partners';
-import Explore from './explore';
+import MainPage from './pages/Page2';
+import Menu from './components/Menu';
+import Partners from './components/partners';
+import Explore from './components/explore';
 
 
 function App() {

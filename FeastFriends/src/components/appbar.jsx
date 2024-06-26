@@ -1,4 +1,4 @@
-import "./index.css";
+import "../index.css";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
 
 function AppBar() {

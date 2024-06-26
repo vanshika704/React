@@ -1,8 +1,8 @@
-import AppBar from './appbar';
-import "./index.css";
+import AppBar from '../components/appbar';
+import "../index.css";
 import { FaSearch, FaPeopleArrows } from "react-icons/fa";
 import { MdRestaurantMenu } from "react-icons/md";
-import Gallery from './backgroundcarousal';
+import Gallery from '../components/backgroundcarousal';
 import { Grid, GridItem } from '@chakra-ui/react';
 
 function MainPage() {
