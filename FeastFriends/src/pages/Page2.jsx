@@ -14,6 +14,7 @@ function MainPage() {
       </div>
       <Greycontainer />
       <Info />
+      <Data/>
     </div>
   );
 }
@@ -91,4 +92,7 @@ function Info() {
       </Grid>
     </div>
   );
+}
+function Data(){
+  return (<><div className='data'>data</div></>)
 }
