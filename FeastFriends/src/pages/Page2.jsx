@@ -4,7 +4,7 @@ import { FaSearch, FaPeopleArrows } from "react-icons/fa";
 import { MdRestaurantMenu } from "react-icons/md";
 import Gallery from '../components/backgroundcarousal';
 import { Grid, GridItem } from '@chakra-ui/react';
-
+import {Link} from 'react-router-dom';
 function MainPage() {
   return (
     <div>
@@ -65,28 +65,28 @@ function Info() {
         marginLeft={50}
       >
         <GridItem className="grid-item" rowSpan={2} colSpan={2}>
-          <div className="image-box">
+          <Link to="/starters" className="image-box">
             <img src='src/assets/c1.jpg' alt='starters' className='grid-image1' />
             <div className="overlay-text1">Starters</div>
-          </div>
+          </Link>
         </GridItem>
         <GridItem className="grid-item" colSpan={1} rowSpan={1}>
-          <div className="image-box">
+          <Link to="/main-course" className="image-box">
             <img src='src/assets/c4.webp' alt='main course' className='grid-image' />
             <div className="overlay-text1">Main Course</div>
-          </div>
+          </Link>
         </GridItem>
         <GridItem className="grid-item" colSpan={1} rowSpan={1}>
-          <div className="image-box">
+          <Link to="/desserts" className="image-box">
             <img src='src/assets/food6.jpg' alt='Desserts' className='grid-image' />
             <div className="overlay-text1">Desserts</div>
-          </div>
+          </Link>
         </GridItem>
         <GridItem className="grid-item" colSpan={2} rowSpan={1}>
-          <div className="image-box">
+          <Link to="/drinks" className="image-box">
             <img src='src/assets/kobby-mendez-xBFTjrMIC0c-unsplash.jpg' alt='Drinks' className='grid-image' />
             <div className="overlay-text1">Drinks</div>
-          </div>
+          </Link>
         </GridItem>
       </Grid>
     </div>

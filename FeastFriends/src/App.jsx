@@ -6,7 +6,10 @@ import MainPage from './pages/Page2';
 import Menu from './components/Menu';
 import Partners from './components/partners';
 import Explore from './components/explore';
-
+import MainCoursePage from './pages/Maincourse';
+import StartersPage from './pages/starters';
+import DessertsPage from './pages/Desserts';
+import DrinksPage from './pages/Drinks';
 
 function App() {
   return (
@@ -17,6 +20,10 @@ function App() {
         <Route path ="/menu" element={<Menu/>} />
         <Route path="/partners" element={<Partners/>}/>
         <Route path="/explore" element={<Explore/>}/>
+        <Route path="/starters" element={<StartersPage />} />
+        <Route path="/main-course" element={<MainCoursePage />} />
+        <Route path="/desserts" element={<DessertsPage />} />
+        <Route path="/drinks" element={<DrinksPage />} />
       </Routes>
     </Router>
   );
