@@ -37,19 +37,25 @@ function Greycontainer() {
   return (
     <div className="grey-container">
       <div>
-        <FaSearch size={30} />
-        <div className="spacer"></div>
-        <div>Explore</div>
+        <Link to="/explore">
+          <FaSearch size={30} />
+          <div className="spacer"></div>
+          <div>Explore</div>
+        </Link>
       </div>
       <div>
-        <FaPeopleArrows size={30} />
-        <div className="spacer"></div>
-        <div>Partners</div>
+        <Link to="/partners">
+          <FaPeopleArrows size={30} />
+          <div className="spacer"></div>
+          <div>Partners</div>
+        </Link>
       </div>
       <div>
-        <MdRestaurantMenu size={30} />
-        <div className="spacer"></div>
-        <div>See Menu</div>
+        <Link to="/menu">
+          <MdRestaurantMenu size={30} />
+          <div className="spacer"></div>
+          <div>See Menu</div>
+        </Link>
       </div>
     </div>
   );
