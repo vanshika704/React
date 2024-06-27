@@ -1,7 +1,7 @@
 
 
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
+import { GoogleLogin } from 'react-google-login';
 import MainPage from './pages/Page2';
 import Menu from './components/Menu';
 import Partners from './components/partners';
@@ -45,16 +45,33 @@ function Logo() {
   );
 }
 
+
 function Credentials() {
+  const responseGoogle = (response) => {
+    console.log(response); // Handle the response from Google authentication
+    history.push('/Page2');
+  };
+
+  const onFailure = (error) => {
+    console.log(error); // Handle error if authentication fails
+  };
+
   return (
     <div className="credentials">
       <input type="text" placeholder="Enter Email" />
       <input type="password" placeholder="Enter Password" />
-      <Link to="/Page2">
-        <button className="custom-button">Sign In with Google</button>
-      </Link>
+
+      <GoogleLogin
+        clientId="323828200975-iob96i4q01ggqv9gdr9fifl18gvps2re.apps.googleusercontent.com"
+        buttonText="Sign In with Google"
+        onSuccess={responseGoogle}
+        onFailure={onFailure}
+        cookiePolicy={'single_host_origin'}
+      />
     </div>
   );
 }
+
+
 
 export default App;
