@@ -1,0 +1,90 @@
+
+
+body {
+  background-color: rgb(18, 31, 31);
+}
+
+.navigation {
+  background-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navcontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  font-weight: bold;
+  font-size: xx-large;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 0;
+  border-radius: 30px;
+  overflow: hidden; 
+}
+
+.name {
+  margin-right: 0;
+  color: rgb(244, 248, 248);
+  font-family: 'Times New Roman', Times, serif;
+}
+.name:hover {
+  color: snow;
+}
+
+.nav-item {
+  color: rgb(181, 241, 241);
+  font-family: cursive;
+  font-size: large;
+  text-decoration: none; 
+  margin: 0; 
+  padding: 0; 
+}
+.nav-item:hover {
+  color: aliceblue;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  height: 1px; 
+  background-color: rgba(181, 241, 241, 0.5); 
+}
+
+.content {
+  display: flex;
+}
+
+.image {
+  margin-left: 45px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px rgba(111, 238, 227, 0.747); 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.image:hover {
+  transform: scale(1.1); 
+  box-shadow: 0px 0px 20px rgba(39, 238, 205, 0.7); 
+}
+
+.intro {
+  margin-top: 70px;
+  margin-left: 80px;
+  color: rgb(181, 241, 241); 
+}
+.intro-card {
+  background-color: transparent; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(129, 245, 229, 0.781); 
+  padding: 20px; 
+}
+
+.intro-content {
+ color: rgb(181, 241, 241); ;
+}
+
+

@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{background-image: url("assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.card {
+  margin-top: 150px;
+  color: rgb(51, 52, 53);
+  background-color: rgba(30, 97, 75, 0.8); /* Set opacity to 80% */
+}
+
+.card-body{
+  color:rgb(247, 248, 250);
+}
+.login{
+  color: aliceblue;
+}

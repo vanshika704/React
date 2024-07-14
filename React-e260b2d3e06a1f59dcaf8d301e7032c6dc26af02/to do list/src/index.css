@@ -1,0 +1,119 @@
+:root {
+  --background-color: #8b8989;
+  --text-color: #000000;
+  --primary-color: #893ea0;
+}
+body {
+ 
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
+}
+
+body.dark-mode {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 30rem;
+  margin: 30px;
+  box-shadow: cornsilk; /* Add margin between the cards */
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  text-align: center;
+}
+
+.searchbar {
+  width: 60%; 
+  height: 40px;
+  display: block;
+}
+
+.row1 {
+  justify-content: center; 
+}
+
+.searchbar-container {
+  display: flex;
+  align-items: center; 
+  width: 85%; 
+  margin-left: 300px;
+}
+
+.dropdown { 
+  margin-left: 10px; 
+}
+
+.dropdown-menu {
+  background-color: rgb(46, 39, 39);
+  border: none;
+}
+
+.btn {
+  margin-left: 10px; 
+}
+
+.icon {
+  margin-left: 10px;
+}
+
+.list-group {
+   
+  width: 60%; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.list-group-item {background-color:rgb(245, 243, 243) !important;
+  margin-top: 10px !important;
+  border-top: none !important; 
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid #363535 !important; 
+  padding: 10px 0 !important; 
+}
+.Add{
+  margin-left: 1400px;
+  margin-top: 250px;
+  font-size: xx-large;
+}
+.addtodo {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+.alternate {
+  margin-left: 20px;
+  size: 40px;
+}
+.all {
+  margin-left: 20px;
+  size: 40px;
+}
+.btn{
+  margin-left: 20px;
+}
+.toggle-button-container {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+}
