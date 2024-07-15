@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:genie/Pages/Page1.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
@@ -14,19 +15,5 @@ class MyApp extends StatelessWidget {
       title: 'Genie',
       home: MyHomePage(),
     );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(body: Text("hello"));
   }
 }
