@@ -25,7 +25,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               Text(
                 "G.E.N.I.E",
-                style: GoogleFonts.orbitron(
+                style: GoogleFonts.poppins(
                   textStyle: const TextStyle(
                     color: Color.fromARGB(255, 16, 33, 70),
                     fontSize: 70,
@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Text(
                 "Green Environmental Network \n     For Intelligent Ecosystem",
-                style: GoogleFonts.orbitron(
+                style: GoogleFonts.poppins(
                   textStyle: const TextStyle(
                     color: Color.fromARGB(255, 16, 33, 70),
                     fontSize: 20,
