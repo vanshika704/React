@@ -61,7 +61,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     foregroundColor: Colors.white,
                     backgroundColor: const Color.fromARGB(255, 16, 33, 70),
                   ),
-                  child: const Text("Get Started"),
+                  child: Text(
+                    "Get Started",
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        fontSize: 15,
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ],
