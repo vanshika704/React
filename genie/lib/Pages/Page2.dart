@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page2 extends StatefulWidget {
@@ -72,6 +74,20 @@ class _Page2State extends State<Page2> {
                   ),
                 ),
               ),
+              SizedBox(height: 20.0),
+              GestureDetector(
+                  onTap: () {
+                    Get.toNamed("/signup");
+                  },
+                  child: Text(
+                    "Don't have an account? Signup",
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                        color: Colors.white,
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
+                  ))
             ],
           ),
         ),

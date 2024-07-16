@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:genie/Pages/Signup.dart';
 import 'package:genie/pages/page1.dart';
 import 'package:genie/pages/page2.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(name: '/', page: () => const MyHomePage()),
         GetPage(name: '/page2', page: () => const Page2()),
+        GetPage(name: '/signup', page: () => const Signup()),
       ],
     );
   }
