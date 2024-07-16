@@ -156,25 +156,18 @@ class _LoginState extends State<Login> {
                 ),
               ),
               const SizedBox(height: 20.0),
+              IconButton(
+                onPressed: _signInWithGoogle,
+                icon: const FaIcon(
+                  FontAwesomeIcons.google,
+                  color: Colors.white,
+                ),
+                tooltip: 'Sign in with Google',
+              ),
+              const SizedBox(height: 20.0),
               SizedBox(
                 height: 50,
                 width: 200,
-                child: ElevatedButton(
-                  onPressed: _signInWithGoogle,
-                  style: ElevatedButton.styleFrom(
-                    foregroundColor: const Color.fromARGB(255, 16, 33, 70),
-                    backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-                  ),
-                  child: Text(
-                    "Login with Google",
-                    style: GoogleFonts.poppins(
-                      textStyle: const TextStyle(
-                        color: Color.fromARGB(255, 16, 33, 70),
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
-                ),
               ),
               const SizedBox(height: 20.0),
               GestureDetector(
@@ -190,14 +183,6 @@ class _LoginState extends State<Login> {
                     ),
                   ),
                 ),
-              ),
-              IconButton(
-                onPressed: _signInWithGoogle,
-                icon: const FaIcon(
-                  FontAwesomeIcons.google,
-                  color: Colors.white,
-                ),
-                tooltip: 'Sign in with Google',
               ),
             ],
           ),
