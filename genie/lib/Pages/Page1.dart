@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: 200,
                 child: ElevatedButton(
                   onPressed: () {
-                    Get.toNamed("/page2");
+                    Get.toNamed("/login");
                   },
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.white,
