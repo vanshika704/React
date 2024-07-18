@@ -12,7 +12,7 @@ class _Page3State extends State<Page3> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 16, 33, 70),
-      // body: Text("hh"),
+     
     );
   }
 }
