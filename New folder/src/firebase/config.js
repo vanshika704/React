@@ -4,13 +4,15 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDXB3pZqSoJlHFiC7eNjiLMgzSmlR2pUOM",
-    authDomain: "moksha-17898.firebaseapp.com",
-    projectId: "moksha-17898",
-    storageBucket: "moksha-17898.appspot.com",
-    messagingSenderId: "22897178299",
-    appId: "1:22897178299:web:24b27570ed3e107f0e1b9e"
-  };
+  apiKey: "AIzaSyDqdSLnnStzeqqQ6X26ZX-yczg2GUQi7ek",
+  authDomain: "genie-dbb1b.firebaseapp.com",
+  databaseURL: "https://genie-dbb1b-default-rtdb.firebaseio.com",
+  projectId: "genie-dbb1b",
+  storageBucket: "genie-dbb1b.appspot.com",
+  messagingSenderId: "695234579942",
+  appId: "1:695234579942:web:6498dfbde11c7b08491a27",
+  measurementId: "G-JZDMQ1N04J"
+};
   
 
 const app = initializeApp(firebaseConfig);
