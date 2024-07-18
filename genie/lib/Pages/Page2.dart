@@ -165,11 +165,11 @@ class _LoginState extends State<Login> {
                 tooltip: 'Sign in with Google',
               ),
               const SizedBox(height: 20.0),
-              SizedBox(
-                height: 50,
+              const SizedBox(
+                height: 2,
                 width: 200,
               ),
-              const SizedBox(height: 20.0),
+              // const SizedBox(height: 20.0),
               GestureDetector(
                 onTap: () {
                   Get.toNamed("/signup");
