@@ -44,7 +44,7 @@ class _LoginState extends State<Login> {
         duration: const Duration(seconds: 2),
       );
 
-      Get.offNamed("/page2");
+      Get.offNamed("/page3");
     } on FirebaseAuthException catch (e) {
       print("Error: $e");
 

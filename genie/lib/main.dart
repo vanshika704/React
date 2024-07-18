@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:genie/Pages/Page2.dart';
+import 'package:genie/Pages/Page3.dart';
 import 'package:genie/Pages/Signup.dart';
 import 'package:genie/firebase_options.dart';
 import 'package:genie/pages/page1.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         // GetPage(name: '/page2', page: () => const Page2()),
         GetPage(name: '/signup', page: () => const Signup()),
         GetPage(name: '/login', page: () => const Login()),
+        GetPage(name: '/page3', page: () => const Page3()),
       ],
     );
   }
