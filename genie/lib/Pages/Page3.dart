@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:genie/Pages/remote.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:video_player/video_player.dart';
 
@@ -12,6 +11,7 @@ class Page3 extends StatefulWidget {
 
 class _Page3State extends State<Page3> {
   late VideoPlayerController _controller;
+  // ignore: unused_field
   bool _isPlaying = true;
 
   @override
@@ -100,7 +100,63 @@ class _Page3State extends State<Page3> {
             )
           else
             const CircularProgressIndicator(),
-          // CircularRemote()
+          const SizedBox(height: 50),
+          Image.asset(
+            "assets/image.png",
+            height: 250,
+            width: 300,
+          ),
+          const SizedBox(height: 40),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: Text(
+                      "PICK",
+                      style: GoogleFonts.poppins(
+                        textStyle: const TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 20),
+                Expanded(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: Text(
+                      "DROP",
+                      style: GoogleFonts.poppins(
+                        textStyle: const TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
