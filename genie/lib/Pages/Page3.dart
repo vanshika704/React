@@ -15,9 +15,15 @@ class _Page3State extends State<Page3> {
       backgroundColor: Color.fromARGB(255, 16, 33, 70),
       body: Column(
         children: [
-          Image.asset(
-            "assets/droneweatherresistance.gif",
-            height: 200,
+          ClipRRect(
+            borderRadius: const BorderRadius.only(
+              bottomLeft: Radius.circular(80.0),
+              bottomRight: Radius.circular(80.0),
+            ),
+            child: Image.asset(
+              "assets/droneweatherresistance.gif",
+              height: 200,
+            ),
           ),
         ],
       ),
