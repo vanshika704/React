@@ -6,7 +6,7 @@ function Page1() {
   return (
     <Flex alignItems="center" padding="10px" backgroundColor="white" boxShadow="sm">
       <Avatar name='Dan Abrahmov' src='src/assets/image.png' height={50} width={50} />
-      <Box marginLeft="20px">
+      <Box marginLeft="10px">
         <div className='Welcome'>
           <div className='ubuntu-regular'>Welcome</div>
           <div className='ubuntu-medium'>Shiv Dhaba Restaurant</div>
