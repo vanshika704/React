@@ -108,48 +108,56 @@ class _SignupState extends State<Signup> {
                 const SizedBox(
                   height: 20,
                 ),
-                TextField(
-                  controller: _emailController,
-                  decoration: InputDecoration(
-                    hintText: 'Username',
-                    filled: true,
-                    fillColor: Colors.white.withOpacity(0.8),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(8.0),
-                      borderSide: BorderSide.none,
+                Expanded(
+                  child: TextField(
+                    controller: _emailController,
+                    decoration: InputDecoration(
+                      hintText: 'Username',
+                      filled: true,
+                      fillColor: Colors.white.withOpacity(0.8),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                        borderSide: BorderSide.none,
+                      ),
                     ),
                   ),
                 ),
                 const SizedBox(height: 16.0),
-                TextField(
-                  controller: _passwordController,
-                  decoration: InputDecoration(
-                    hintText: 'Password',
-                    filled: true,
-                    fillColor: Colors.white.withOpacity(0.8),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(9.0),
-                      borderSide: BorderSide.none,
+                Expanded(
+                  child: TextField(
+                    controller: _passwordController,
+                    decoration: InputDecoration(
+                      hintText: 'Password',
+                      filled: true,
+                      fillColor: Colors.white.withOpacity(0.8),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(9.0),
+                        borderSide: BorderSide.none,
+                      ),
                     ),
+                    obscureText: true,
                   ),
-                  obscureText: true,
                 ),
                 const SizedBox(height: 50.0),
                 SizedBox(
                   height: 50,
                   width: 200,
-                  child: ElevatedButton(
-                    onPressed: _signInWithEmailAndPassword,
-                    style: ElevatedButton.styleFrom(
-                      foregroundColor: const Color.fromARGB(255, 16, 33, 70),
-                      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-                    ),
-                    child: Text(
-                      "Signup",
-                      style: GoogleFonts.poppins(
-                        textStyle: const TextStyle(
-                          color: Color.fromARGB(255, 16, 33, 70),
-                          fontSize: 15,
+                  child: Expanded(
+                    child: ElevatedButton(
+                      onPressed: _signInWithEmailAndPassword,
+                      style: ElevatedButton.styleFrom(
+                        foregroundColor: const Color.fromARGB(255, 16, 33, 70),
+                        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+                      ),
+                      child: Expanded(
+                        child: Text(
+                          "Signup",
+                          style: GoogleFonts.poppins(
+                            textStyle: const TextStyle(
+                              color: Color.fromARGB(255, 16, 33, 70),
+                              fontSize: 15,
+                            ),
+                          ),
                         ),
                       ),
                     ),
@@ -160,24 +168,28 @@ class _SignupState extends State<Signup> {
                   onTap: () {
                     Get.toNamed("/login");
                   },
-                  child: Text(
-                    "Already have an account? Login",
-                    style: GoogleFonts.poppins(
-                      textStyle: const TextStyle(
-                        color: Colors.white,
-                        decoration: TextDecoration.underline,
+                  child: Expanded(
+                    child: Text(
+                      "Already have an account? Login",
+                      style: GoogleFonts.poppins(
+                        textStyle: const TextStyle(
+                          color: Colors.white,
+                          decoration: TextDecoration.underline,
+                        ),
                       ),
                     ),
                   ),
                 ),
                 const SizedBox(height: 20.0),
-                IconButton(
-                  onPressed: _signInWithGoogle,
-                  icon: const FaIcon(
-                    FontAwesomeIcons.google,
-                    color: Colors.white,
+                Expanded(
+                  child: IconButton(
+                    onPressed: _signInWithGoogle,
+                    icon: const FaIcon(
+                      FontAwesomeIcons.google,
+                      color: Colors.white,
+                    ),
+                    tooltip: 'Sign in with Google',
                   ),
-                  tooltip: 'Sign in with Google',
                 ),
               ],
             ),

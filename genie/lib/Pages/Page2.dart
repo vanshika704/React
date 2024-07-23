@@ -109,31 +109,35 @@ class _LoginState extends State<Login> {
                   width: 300,
                 ),
                 const SizedBox(height: 20),
-                TextField(
-                  controller: _emailController,
-                  decoration: InputDecoration(
-                    hintText: 'Email',
-                    filled: true,
-                    fillColor: Colors.white.withOpacity(0.8),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(8.0),
-                      borderSide: BorderSide.none,
+                Expanded(
+                  child: TextField(
+                    controller: _emailController,
+                    decoration: InputDecoration(
+                      hintText: 'Email',
+                      filled: true,
+                      fillColor: Colors.white.withOpacity(0.8),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                        borderSide: BorderSide.none,
+                      ),
                     ),
                   ),
                 ),
                 const SizedBox(height: 16.0),
-                TextField(
-                  controller: _passwordController,
-                  decoration: InputDecoration(
-                    hintText: 'Password',
-                    filled: true,
-                    fillColor: Colors.white.withOpacity(0.8),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(9.0),
-                      borderSide: BorderSide.none,
+                Expanded(
+                  child: TextField(
+                    controller: _passwordController,
+                    decoration: InputDecoration(
+                      hintText: 'Password',
+                      filled: true,
+                      fillColor: Colors.white.withOpacity(0.8),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(9.0),
+                        borderSide: BorderSide.none,
+                      ),
                     ),
+                    obscureText: true,
                   ),
-                  obscureText: true,
                 ),
                 const SizedBox(height: 50.0),
                 SizedBox(
@@ -171,16 +175,18 @@ class _LoginState extends State<Login> {
                   width: 200,
                 ),
                 // const SizedBox(height: 20.0),
-                GestureDetector(
-                  onTap: () {
-                    Get.toNamed("/signup");
-                  },
-                  child: Text(
-                    "Don't have an account? Signup",
-                    style: GoogleFonts.poppins(
-                      textStyle: const TextStyle(
-                        color: Colors.white,
-                        decoration: TextDecoration.underline,
+                Expanded(
+                  child: GestureDetector(
+                    onTap: () {
+                      Get.toNamed("/signup");
+                    },
+                    child: Text(
+                      "Don't have an account? Signup",
+                      style: GoogleFonts.poppins(
+                        textStyle: const TextStyle(
+                          color: Colors.white,
+                          decoration: TextDecoration.underline,
+                        ),
                       ),
                     ),
                   ),
