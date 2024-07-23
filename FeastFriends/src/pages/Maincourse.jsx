@@ -1,4 +1,4 @@
 function MainCoursePage(){
-    return(<>MainCourse</>)
+    return(<>MainCourse file</>)
 }
 export default MainCoursePage;
