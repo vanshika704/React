@@ -4,7 +4,7 @@ import axios from 'axios';
 import "../index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const unsplashAccessKey = '-SXu-p1sLlhOb9e6jqiKCfP46WmqjCl3DeGLt_L2-tw'; // Replace with your Unsplash Access Key
+const unsplashAccessKey = '-SXu-p1sLlhOb9e6jqiKCfP46WmqjCl3DeGLt_L2-tw'; 
 const itemApiUrl = 'https://shiv-fast-food-backend-wuq9.onrender.com/api/v1/menu/get-item'; // Replace with your original API endpoint
 
 function Page1() {
