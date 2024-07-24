@@ -17,7 +17,7 @@ function Page1() {// page 1 named function
         const items = response.data;
 
       
-        const fetchImagesPromises = items.map(item => {
+        const fetchImagesPromises = items.map(item => {// fetching images on such a way that it is given as a promise 
           return axios.get(`https://api.unsplash.com/search/photos`, {
             params: {
               query: item.name,
