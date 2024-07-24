@@ -5,7 +5,7 @@ import "../index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const unsplashAccessKey = '-SXu-p1sLlhOb9e6jqiKCfP46WmqjCl3DeGLt_L2-tw'; 
-const itemApiUrl = 'https://shiv-fast-food-backend-wuq9.onrender.com/api/v1/menu/get-item'; // Replace with your original API endpoint
+const itemApiUrl = 'https://shiv-fast-food-backend-wuq9.onrender.com/api/v1/menu/get-item'; 
 
 function Page1() {
   const [data, setData] = useState([]);
@@ -34,7 +34,7 @@ function Page1() {
           });
         });
 
-        // Wait for all image fetches to complete
+        
         Promise.all(fetchImagesPromises)
           .then(fetchedData => {
             setData(fetchedData);
