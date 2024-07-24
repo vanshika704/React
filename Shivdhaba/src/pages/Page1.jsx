@@ -4,16 +4,16 @@ import axios from 'axios';
 import "../index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const unsplashAccessKey = '-SXu-p1sLlhOb9e6jqiKCfP46WmqjCl3DeGLt_L2-tw'; 
-const itemApiUrl = 'https://shiv-fast-food-backend-wuq9.onrender.com/api/v1/menu/get-item'; 
+const unsplashAccessKey = '-SXu-p1sLlhOb9e6jqiKCfP46WmqjCl3DeGLt_L2-tw'; // key for unsplash api 
+const itemApiUrl = 'https://shiv-fast-food-backend-wuq9.onrender.com/api/v1/menu/get-item'; // this is the backend used for cvollection of data
 
-function Page1() {
-  const [data, setData] = useState([]);
+function Page1() {// page 1 named function
+  const [data, setData] = useState([]);// use state because we want to update the data 
 
-  useEffect(() => {
+  useEffect(() => {// use effect used so that the api is called everytime it is refreshed 
   
-    axios.get(itemApiUrl)
-      .then(response => {
+    axios.get(itemApiUrl)// axios .get used to get the api (response)
+      .then(response => {// after that , the response is changed to response .json and then to items variable
         const items = response.data;
 
       
