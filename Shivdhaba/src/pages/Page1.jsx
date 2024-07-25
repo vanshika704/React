@@ -3,7 +3,7 @@ import { Avatar, Spacer, Flex, Box, Input, Button, Card, Image, Stack, CardBody,
 import axios from 'axios';
 import "../index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { IoHome } from "react-icons/io5";
 const unsplashAccessKey = '-SXu-p1sLlhOb9e6jqiKCfP46WmqjCl3DeGLt_L2-tw'; // key for unsplash api 
 const itemApiUrl = 'https://shiv-fast-food-backend-wuq9.onrender.com/api/v1/menu/get-item'; // this is the backend used for collection of data
 
@@ -64,7 +64,7 @@ function Page1() {
 
   return (
     <div>
-      <Flex alignItems="center" padding="10px" backgroundColor="white" boxShadow="sm">
+      <Flex alignItems="center" padding="10px" backgroundColor="teal" boxShadow="sm" opacity={9}>
         <Avatar name='Dan Abrahmov' src='src/assets/image.png' height={50} width={50} />
         <Box marginLeft="10px">
           <div className='Welcome'>
@@ -145,7 +145,7 @@ function Page1() {
       </div>
       <nav className="navbar fixed-bottom bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Fixed bottom</a>
+          <a className="navbar-brand" href="#"><IoHome /></a>
         </div>
       </nav>
     </div>
