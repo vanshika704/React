@@ -8,8 +8,9 @@ const unsplashAccessKey = '-SXu-p1sLlhOb9e6jqiKCfP46WmqjCl3DeGLt_L2-tw'; // key 
 const itemApiUrl = 'https://shiv-fast-food-backend-wuq9.onrender.com/api/v1/menu/get-item'; // this is the backend used for collection of data
 
 function Page1() {
-  const [data, setData] = useState([]); // use state because we want to update the data 
+  const [data, setData] = useState([]); // state to store the data 
   const [loading, setLoading] = useState(true); // state for loading spinner
+  const [counts, setCounts] = useState({}); // state to store the count for each item
 
   useEffect(() => {
     axios.get(itemApiUrl)
@@ -43,6 +44,23 @@ function Page1() {
         setLoading(false); // set loading to false even if there is an error
       });
   }, []);
+
+  const handleAddToCart = (itemId) => {
+    setCounts((prevCounts) => ({
+      ...prevCounts,
+      [itemId]: (prevCounts[itemId] || 0) + 1,
+    }));
+  };
+
+  const handleRemoveFromCart = (itemId) => {
+    setCounts((prevCounts) => {
+      const newCounts = { ...prevCounts };
+      if (newCounts[itemId] > 0) {
+        newCounts[itemId] -= 1;
+      }
+      return newCounts;
+    });
+  };
 
   return (
     <div>
@@ -84,7 +102,36 @@ function Page1() {
               <Stack>
                 <CardBody>
                   <Heading size='md'>{item.name}</Heading>
-                  <Badge colorScheme={item.isVeg ? 'green' : 'red'}>{item.isVeg ? 'Veg' : 'Non-Veg'}</Badge>
+                  <Badge colorScheme={item.isVeg ? 'green' : 'red'}>{item.isVeg ? 'Veg' : 'Non-Veg'}</Badge><br></br>
+                  {counts[item.id] ? (
+                    <Flex marginTop={10} alignItems="center">
+                      <Button 
+                        colorScheme='teal' 
+                        variant='outline' 
+                        onClick={() => handleRemoveFromCart(item.id)}
+                      >
+                        -
+                      </Button>
+                      <Box marginX={2}>{counts[item.id]}</Box>
+                      <Button 
+                        colorScheme='teal' 
+                        variant='outline' 
+                        onClick={() => handleAddToCart(item.id)}
+                      >
+                        +
+                      </Button>
+                    </Flex>
+                  ) : (
+                    <Button 
+                      colorScheme='teal' 
+                      variant='outline' 
+                      marginTop={10} 
+                      marginLeft={500}
+                      onClick={() => handleAddToCart(item.id)}
+                    >
+                      Add to Cart
+                    </Button>
+                  )}
                 </CardBody>
                 <CardFooter>
                   <Button variant='solid' colorScheme='blue'>
