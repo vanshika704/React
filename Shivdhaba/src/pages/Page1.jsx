@@ -1,23 +1,21 @@
 import { useEffect, useState } from 'react';
-import { Avatar, Spacer, Flex, Box, Input, Button, Card, Image, Stack, CardBody, Heading,  CardFooter, Badge } from '@chakra-ui/react';
+import { Avatar, Spacer, Flex, Box, Input, Button, Card, Image, Stack, CardBody, Heading, CardFooter, Badge, Spinner } from '@chakra-ui/react';
 import axios from 'axios';
 import "../index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const unsplashAccessKey = '-SXu-p1sLlhOb9e6jqiKCfP46WmqjCl3DeGLt_L2-tw'; // key for unsplash api 
-const itemApiUrl = 'https://shiv-fast-food-backend-wuq9.onrender.com/api/v1/menu/get-item'; // this is the backend used for cvollection of data
+const itemApiUrl = 'https://shiv-fast-food-backend-wuq9.onrender.com/api/v1/menu/get-item'; // this is the backend used for collection of data
 
-function Page1() {// page 1 named function
-  const [data, setData] = useState([]);// use state because we want to update the data 
+function Page1() {
+  const [data, setData] = useState([]); // use state because we want to update the data 
+  const [loading, setLoading] = useState(true); // state for loading spinner
 
-  useEffect(() => {// use effect used so that the api is called everytime it is refreshed 
-  
-    axios.get(itemApiUrl)// axios .get used to get the api (response)
-      .then(response => {// after that , the response is changed to response .json and then to items variable
+  useEffect(() => {
+    axios.get(itemApiUrl)
+      .then(response => {
         const items = response.data;
-
-      
-        const fetchImagesPromises = items.map(item => {// fetching images on such a way that it is given as a promise 
+        const fetchImagesPromises = items.map(item => {
           return axios.get(`https://api.unsplash.com/search/photos`, {
             params: {
               query: item.name,
@@ -34,13 +32,16 @@ function Page1() {// page 1 named function
           });
         });
 
-        
         Promise.all(fetchImagesPromises)
           .then(fetchedData => {
             setData(fetchedData);
+            setLoading(false); // set loading to false when data is fetched
           });
       })
-      .catch(error => console.error('Error fetching data:', error));
+      .catch(error => {
+        console.error('Error fetching data:', error);
+        setLoading(false); // set loading to false even if there is an error
+      });
   }, []);
 
   return (
@@ -61,28 +62,45 @@ function Page1() {// page 1 named function
         <Avatar name='Dan Abrahmov' src='https://bit.ly/dan-abramov' height={50} width={50} marginLeft="10px" />
       </Flex>
       <div className='List'>
-        {data.map((item, index) => (
-          <Card key={index} direction={{ base: 'column', sm: 'row' }} overflow='hidden' variant='outline'>
-            <Image
-              objectFit='cover'
-              maxW={{ base: '100%', sm: '200px' }}
-              src={item.image}
-              alt={item.name}
-            />
-            <Stack>
-              <CardBody>
-                <Heading size='md'>{item.name}</Heading>
-                <Badge colorScheme={item.isVeg ? 'green' : 'red'}>{item.isVeg ? 'Veg' : 'Non-Veg'}</Badge>
-              </CardBody>
-              <CardFooter>
-                <Button variant='solid' colorScheme='blue'>
-                  Order {item.name}
-                </Button>
-              </CardFooter>
+        {loading ? (
+          <Flex justifyContent="center" alignItems="center" height="80vh">
+            <Stack direction='row' spacing={4}>
+              <Spinner size='xs' />
+              <Spinner size='sm' />
+              <Spinner size='md' />
+              <Spinner size='lg' />
+              <Spinner size='xl' />
             </Stack>
-          </Card>
-        ))}
+          </Flex>
+        ) : (
+          data.map((item, index) => (
+            <Card key={index} direction={{ base: 'column', sm: 'row' }} overflow='hidden' variant='outline'>
+              <Image
+                objectFit='cover'
+                maxW={{ base: '100%', sm: '200px' }}
+                src={item.image}
+                alt={item.name}
+              />
+              <Stack>
+                <CardBody>
+                  <Heading size='md'>{item.name}</Heading>
+                  <Badge colorScheme={item.isVeg ? 'green' : 'red'}>{item.isVeg ? 'Veg' : 'Non-Veg'}</Badge>
+                </CardBody>
+                <CardFooter>
+                  <Button variant='solid' colorScheme='blue'>
+                    Order {item.name}
+                  </Button>
+                </CardFooter>
+              </Stack>
+            </Card>
+          ))
+        )}
       </div>
+      <nav className="navbar fixed-bottom bg-body-tertiary">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">Fixed bottom</a>
+        </div>
+      </nav>
     </div>
   );
 }
